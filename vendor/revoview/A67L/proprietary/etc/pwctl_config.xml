@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<config>
+<item name="LaunchBlackList">
+</item>
+<!--
+<item name='FlingApp'>
+    <packageName>com.tencent.mm</packageName>
+</item>
+-->
+<item name='FlingApp'>
+    <packageName>com.ss.android.ugc.aweme</packageName>
+    <packageName>com.ss.android.ugc.aweme.lite</packageName>
+    <packageName>com.smile.gifmake</packageName>
+    <packageName>com.kuaishou.nebula</packageName>
+    <packageName>com.primatelabs.geekbench</packageName>
+</item>
+  <item name='Game'>
+    <packageName>com.tencent.tmpg.sgame</packageName>
+    <packageName>com.tencent.tmpg.pubgmhd</packageName>
+    <packageName>com.tencent.tmpg.lolm</packageName>
+</item>
+</config>

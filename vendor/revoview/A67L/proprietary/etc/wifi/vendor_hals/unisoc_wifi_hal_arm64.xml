@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+     SPDX-FileCopyrightText: 2016-2023 Unisoc (Shanghai) Technologies Co., Ltd
+     SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+-->
+<WifiVendorHal version="1">
+<path>/vendor/lib64/hw/libwifi-hal-unisoc.so</path>
+<primary>1</primary>
+</WifiVendorHal>

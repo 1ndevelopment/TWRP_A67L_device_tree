@@ -1,0 +1,23 @@
+# Recovery fstab for FOXXD A67L (SC9863A)
+# Android 14 (API 34), A/B slots, Dynamic partitions, EROFS
+
+# Boot partitions (physical, slot-specific)
+/boot           emmc    /dev/block/by-name/boot           slotselect
+/vendor_boot    emmc    /dev/block/by-name/vendor_boot    slotselect
+
+# Dynamic/logical partitions (mapped from super by TWRP)
+/system         erofs   /dev/block/mapper/system          defaults
+/vendor         erofs   /dev/block/mapper/vendor          defaults
+/product        erofs   /dev/block/mapper/product         defaults
+/system_ext     erofs   /dev/block/mapper/system_ext      defaults
+/odm            erofs   /dev/block/mapper/odm             defaults
+
+# Data and cache (physical, shared between slots)
+/data           f2fs    /dev/block/by-name/userdata       defaults
+/cache          ext4    /dev/block/by-name/cache          defaults
+/metadata       ext4    /dev/block/by-name/metadata       defaults
+
+# Misc partitions
+/misc           emmc    /dev/block/by-name/misc           defaults
+/persist        emmc    /dev/block/by-name/persist        defaults
+/prodnv         ext4    /dev/block/by-name/prodnv         defaults

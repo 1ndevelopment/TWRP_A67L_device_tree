@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2016-2023 Unisoc (Shanghai) Technologies Co., Ltd
+     SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+-->
+<permissions>
+<library name="androidx.camera.extensions.impl"
+file="/vendor/framework/androidx.camera.extensions.impl.jar" />
+
+</permissions>

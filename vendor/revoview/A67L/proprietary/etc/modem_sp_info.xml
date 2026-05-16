@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+     SPDX-FileCopyrightText: 2016-2023 Unisoc (Shanghai) Technologies Co., Ltd
+     SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+-->
+<modem_info>
+	<product val="sharkl3"/>
+	<modem_name val="sp"/>
+	<partion_cnt val="2"/>
+	<ioctl_path val="/dev/pmsys"/>
+	<src_path val="/dev/block/by-name/"/>
+	<all_range base="0x800000" size="0x40000"/>
+	<!--dst_path val="/proc/pmic/"/-->
+	<!-- special: bit0 sec,  bit1 nv, bit2 boot iram, bit3 cmdline;
+	     miniap: bit4 spl,  bit5 sml, bit6 uboot, bit7 boot;
+	     modem: bit8 modem head, bit9 modem, bit10 mode dsp, bit11 other modem
+	     pmsys:  bit12 pm, bit13 pm cali
+	     audio:  bit16 adsp
+	     chsys:  bit20 ch, bit21 ch cali
+	     bit 31 clear -->
+	<partion_item>
+		<partition00 base="0x89400000" size="0x200000" name="pmsys" src_file="pm_sys" dst_file="pmsys" flag="0x00001001"/>
+		<partition01 base="0x800000" size="0x1000" name="pm_sys_bootcode" src_file="NULL" dst_file="boot_code" flag="0x00001004" bootcode="0x3800 0x9 0x46874800 0x89400000"/>
+	</partion_item>
+</modem_info>

@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+SPDX-FileCopyrightText: 2022-2023 Unisoc (Shanghai) Technologies Co., Ltd
+SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+
+Copyright 2022-2023 Unisoc (Shanghai) Technologies Co., Ltd.
+Licensed under the Unisoc General Software License, version 1.0 (the License);
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+https://www.unisoc.com/en_us/license/UNISOC_GENERAL_LICENSE_V1.0-EN_US
+Software distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OF ANY KIND, either express or implied.
+See the Unisoc General Software License, version 1.0 for more details.
+-->
+<cfg>
+    <sensor_name>bf2553</sensor_name>
+    <versionid>0x0009001A</versionid>
+    <scenario_num>4</scenario_num>
+    <scenario alia="com">
+        <id>0x0000000000000000</id>
+        <block_num>56</block_num>
+        <imageWidth>2592</imageWidth>
+        <imageHeight>1944</imageHeight>
+        <block name="AE">
+            <block_id>0x4031</block_id>
+            <param>com</param>
+        </block>
+        <block name="AEM">
+            <block_id>0x400e</block_id>
+            <param>com</param>
+        </block>
+        <block name="AE_CTRL">
+            <block_id>0x50a7</block_id>
+            <param>com</param>
+        </block>
+        <block name="AF">
+            <block_id>0x4033</block_id>
+            <param>com</param>
+        </block>
+        <block name="AFL_V1">
+            <block_id>0x4019</block_id>
+            <param>com</param>
+        </block>
+        <block name="AFL_V3">
+            <block_id>0x401a</block_id>
+            <param>com</param>
+        </block>
+        <block name="ALSC">
+            <block_id>0x402f</block_id>
+            <param>com</param>
+        </block>
+        <block name="ANTIFL">
+            <block_id>0x403b</block_id>
+            <param>com</param>
+        </block>
+        <block name="ATM4GAMM">
+            <block_id>0x403d</block_id>
+            <param>com</param>
+        </block>
+        <block name="AWB">
+            <block_id>0x4032</block_id>
+            <param>com</param>
+        </block>
+        <block name="BAYER_NR">
+            <block_id>0x5003</block_id>
+            <param>com</param>
+        </block>
+        <block name="BEAUTY">
+            <block_id>0x5077</block_id>
+            <param>com</param>
+        </block>
+        <block name="BIN">
+            <block_id>0x400c</block_id>
+            <param>com</param>
+        </block>
+        <block name="BLC">
+            <block_id>0x4002</block_id>
+            <param>com</param>
+        </block>
+        <block name="BPC">
+            <block_id>0x5001</block_id>
+            <param>com</param>
+        </block>
+        <block name="BRIGHT">
+            <block_id>0x401f</block_id>
+            <param>com</param>
+        </block>
+        <block name="CAP_3DNR">
+            <block_id>0x5005</block_id>
+            <param>com</param>
+        </block>
+        <block name="CCE">
+            <block_id>0x4017</block_id>
+            <param>com</param>
+        </block>
+        <block name="CCE_UVDIV">
+            <block_id>0x4018</block_id>
+            <param>com</param>
+        </block>
+        <block name="CFAI">
+            <block_id>0x4011</block_id>
+            <param>com</param>
+        </block>
+        <block name="CMC10_V1">
+            <block_id>0x50aa</block_id>
+            <param>com</param>
+        </block>
+        <block name="CNR3">
+            <block_id>0x5076</block_id>
+            <param>com</param>
+        </block>
+        <block name="CONTRT">
+            <block_id>0x4020</block_id>
+            <param>com</param>
+        </block>
+        <block name="DRE_PRO">
+            <block_id>0x5081</block_id>
+            <param>com</param>
+        </block>
+        <block name="D_ENVI">
+            <block_id>0x4035</block_id>
+            <param>com</param>
+        </block>
+        <block name="EE">
+            <block_id>0x4023</block_id>
+            <param>com</param>
+        </block>
+        <block name="FLASH">
+            <block_id>0x4034</block_id>
+            <param>com</param>
+        </block>
+        <block name="GRGB">
+            <block_id>0x4010</block_id>
+            <param>com</param>
+        </block>
+        <block name="HDR">
+            <block_id>0x5083</block_id>
+            <param>com</param>
+        </block>
+        <block name="HIST2">
+            <block_id>0x4022</block_id>
+            <param>com</param>
+        </block>
+        <block name="HIST">
+            <block_id>0x4021</block_id>
+            <param>com</param>
+        </block>
+        <block name="HSV">
+            <block_id>0x4015</block_id>
+            <param>com</param>
+        </block>
+        <block name="HSV_NEW">
+            <block_id>0x5067</block_id>
+            <param>com</param>
+        </block>
+        <block name="HUE">
+            <block_id>0x4029</block_id>
+            <param>com</param>
+        </block>
+        <block name="IIRCNR">
+            <block_id>0x402a</block_id>
+            <param>com</param>
+        </block>
+        <block name="LSC_1D">
+            <block_id>0x400b</block_id>
+            <param>com</param>
+        </block>
+        <block name="LSC_2D">
+            <block_id>0x400a</block_id>
+            <param>com</param>
+        </block>
+        <block name="MFNR">
+            <block_id>0x5080</block_id>
+            <param>com</param>
+        </block>
+        <block name="NLC">
+            <block_id>0x4009</block_id>
+            <param>com</param>
+        </block>
+        <block name="PDAF4">
+            <block_id>0x50a6</block_id>
+            <param>com</param>
+        </block>
+        <block name="PDAF_E">
+            <block_id>0x5000</block_id>
+            <param>com</param>
+        </block>
+        <block name="POSTERI">
+            <block_id>0x4016</block_id>
+            <param>com</param>
+        </block>
+        <block name="PREGLBG">
+            <block_id>0x4001</block_id>
+            <param>com</param>
+        </block>
+        <block name="PRE_3DNR">
+            <block_id>0x5004</block_id>
+            <param>com</param>
+        </block>
+        <block name="RGBGAIN">
+            <block_id>0x4007</block_id>
+            <param>com</param>
+        </block>
+        <block name="RGB_AFM">
+            <block_id>0x5002</block_id>
+            <param>com</param>
+        </block>
+        <block name="RGB_DITH">
+            <block_id>0x4008</block_id>
+            <param>com</param>
+        </block>
+        <block name="RGB_GAM">
+            <block_id>0x4014</block_id>
+            <param>com</param>
+        </block>
+        <block name="SATURAT">
+            <block_id>0x4028</block_id>
+            <param>com</param>
+        </block>
+        <block name="UV_CDN">
+            <block_id>0x4025</block_id>
+            <param>com</param>
+        </block>
+        <block name="UV_POSTCDN">
+            <block_id>0x4026</block_id>
+            <param>com</param>
+        </block>
+        <block name="YNR">
+            <block_id>0x401e</block_id>
+            <param>com</param>
+        </block>
+        <block name="YNRS">
+            <block_id>0x506c</block_id>
+            <param>com</param>
+        </block>
+        <block name="YUV_NOISEFILTER">
+            <block_id>0x402c</block_id>
+            <param>com</param>
+        </block>
+        <block name="YUV_PRECDN">
+            <block_id>0x401d</block_id>
+            <param>com</param>
+        </block>
+        <block name="Y_GAMMA">
+            <block_id>0x4024</block_id>
+            <param>com</param>
+        </block>
+    </scenario>
+    <scenario alia="prv0">
+        <id>0x0000010000000000</id>
+        <block_num>1</block_num>
+        <imageWidth>2592</imageWidth>
+        <imageHeight>1944</imageHeight>
+        <block name="PREGLBG">
+            <block_id>0x4001</block_id>
+            <param>prv0</param>
+        </block>
+    </scenario>
+    <scenario alia="cap0">
+        <id>0x0000050000000000</id>
+        <block_num>5</block_num>
+        <imageWidth>2592</imageWidth>
+        <imageHeight>1944</imageHeight>
+        <block name="BAYER_NR">
+            <block_id>0x5003</block_id>
+            <param>cap0</param>
+        </block>
+        <block name="BRIGHT">
+            <block_id>0x401f</block_id>
+            <param>cap0</param>
+        </block>
+        <block name="CONTRT">
+            <block_id>0x4020</block_id>
+            <param>cap0</param>
+        </block>
+        <block name="EE">
+            <block_id>0x4023</block_id>
+            <param>cap0</param>
+        </block>
+        <block name="PREGLBG">
+            <block_id>0x4001</block_id>
+            <param>cap0</param>
+        </block>
+    </scenario>
+    <scenario alia="video0">
+        <id>0x0000090000000000</id>
+        <block_num>4</block_num>
+        <imageWidth>2592</imageWidth>
+        <imageHeight>1944</imageHeight>
+        <block name="AE">
+            <block_id>0x4031</block_id>
+            <param>video0</param>
+        </block>
+        <block name="AE_CTRL">
+            <block_id>0x50a7</block_id>
+            <param>video0</param>
+        </block>
+        <block name="BRIGHT">
+            <block_id>0x401f</block_id>
+            <param>video0</param>
+        </block>
+        <block name="PREGLBG">
+            <block_id>0x4001</block_id>
+            <param>video0</param>
+        </block>
+    </scenario>
+</cfg>

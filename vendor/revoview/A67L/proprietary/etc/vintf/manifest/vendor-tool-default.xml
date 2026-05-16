@@ -1,0 +1,10 @@
+<!--
+     SPDX-FileCopyrightText: 2016-2023 Unisoc (Shanghai) Technologies Co., Ltd
+     SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+-->
+<manifest version="1.0" type="device">
+    <hal format="aidl">
+        <name>vendor.sprd.hardware.tool</name>
+        <fqname>IToolControl/default</fqname>
+    </hal>
+</manifest>

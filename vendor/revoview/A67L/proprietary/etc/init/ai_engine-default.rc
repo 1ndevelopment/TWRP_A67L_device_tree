@@ -1,0 +1,10 @@
+# SPDX-FileCopyrightText: 2020 Unisoc (Shanghai) Technologies Co., Ltd
+# SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+
+service vendor.ai_engine-default /vendor/bin/hw/vendor.unisoc.hardware.ai_engine-service
+    interface aidl vendor.unisoc.hardware.ai_engine.IAIEngineControl/default
+    class hal
+    user root
+    group system
+    oneshot
+    disabled

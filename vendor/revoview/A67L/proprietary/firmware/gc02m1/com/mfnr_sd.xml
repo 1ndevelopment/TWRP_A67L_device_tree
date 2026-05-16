@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+SPDX-FileCopyrightText: 2022-2023 Unisoc (Shanghai) Technologies Co., Ltd
+SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+
+Copyright 2022-2023 Unisoc (Shanghai) Technologies Co., Ltd.
+Licensed under the Unisoc General Software License, version 1.0 (the License);
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+https://www.unisoc.com/en_us/license/UNISOC_GENERAL_LICENSE_V1.0-EN_US
+Software distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OF ANY KIND, either express or implied.
+See the Unisoc General Software License, version 1.0 for more details.
+-->
+<MFNR_SD_20652>
+	<tuning_param>
+		<MFNR_SD_version_major type="uint8"  range="[0,255]"  default="1"  length="1"  description="description param">1</MFNR_SD_version_major>
+		<MFNR_SD_version_minor type="uint8"  range="[0,255]"  default="0"  length="1"  description="description param">0</MFNR_SD_version_minor>
+		<MFNR_SD_version_micro type="uint8"  range="[0,255]"  default="0"  length="1"  description="description param">0</MFNR_SD_version_micro>
+		<enabled  type="uint8"  range="[0,1]" default="1"   length="1"    description="description param">1</enabled>
+		<gain_max0 type="uint16"  range="[128,32768]"  default="2304" length="1" description="description param">2304</gain_max0>
+		<gain_max1 type="uint16"  range="[128,32768]"  default="3840" length="1" description="description param">3840</gain_max1>
+		<gain_max2 type="uint16"  range="[128,32768]"  default="4480" length="1" description="description param">4480</gain_max2>
+		<gain_max3 type="uint16"  range="[128,32768]"  default="5888" length="1" description="description param">5888</gain_max3>
+		<gain_max4 type="uint16"  range="[128,32768]"  default="6400" length="1" description="description param">6400</gain_max4>
+		<gain_max5 type="uint16"  range="[128,32768]"  default="8192" length="1" description="description param">8192</gain_max5>
+		<gain_max6 type="uint16"  range="[128,32768]"  default="0" length="1" description="description param">0</gain_max6>
+		<gain_max7 type="uint16"  range="[128,32768]"  default="0" length="1" description="description param">0</gain_max7>
+		<gain_max8 type="uint16"  range="[128,32768]"  default="0" length="1" description="description param">0</gain_max8>
+		<gain_max9 type="uint16"  range="[128,32768]"  default="0" length="1" description="description param">0</gain_max9>
+		<gain_min0 type="uint16"  range="[128,32768]"  default="128" length="1" description="description param">128</gain_min0>
+		<gain_min1 type="uint16"  range="[128,32768]"  default="1536" length="1" description="description param">1536</gain_min1>
+		<gain_min2 type="uint16"  range="[128,32768]"  default="2304" length="1" description="description param">2304</gain_min2>
+		<gain_min3 type="uint16"  range="[128,32768]"  default="3840" length="1" decription="description param">3840</gain_min3>
+		<gain_min4 type="uint16"  range="[128,32768]"  default="4480" length="1" description="description param">4480</gain_min4>
+		<gain_min5 type="uint16"  range="[128,32768]"  default="5888" length="1" description="description param">5888</gain_min5>
+		<gain_min6 type="uint16"  range="[128,32768]"  default="0" length="1" description="description param">0</gain_min6>
+		<gain_min7 type="uint16"  range="[128,32768]"  default="0" length="1" description="description param">0</gain_min7>
+		<gain_min8 type="uint16"  range="[128,32768]"  default="0" length="1" description="description param">0</gain_min8>
+		<gain_min9 type="uint16"  range="[128,32768]"  default="0" length="1" description="description param">0</gain_min9>
+		<gain_framenum0 type="uint8"  range="[0,9]"  default="3" length="1" description="description param">3</gain_framenum0>
+		<gain_framenum1 type="uint8"  range="[0,9]"  default="4" length="1" description="description param">4</gain_framenum1>
+		<gain_framenum2 type="uint8"  range="[0,9]"  default="5" length="1" description="description param">5</gain_framenum2>
+		<gain_framenum3 type="uint8"  range="[0,9]"  default="6" length="1" description="description param">6</gain_framenum3>
+		<gain_framenum4 type="uint8"  range="[0,9]"  default="7" length="1" description="description param">7</gain_framenum4>
+		<gain_framenum5 type="uint8"  range="[0,9]"  default="8" length="1" description="description param">8</gain_framenum5>
+		<gain_framenum6 type="uint8"  range="[0,9]"  default="0" length="1" description="description param">0</gain_framenum6>
+		<gain_framenum7 type="uint8"  range="[0,9]"  default="0" length="1" description="description param">0</gain_framenum7>
+		<gain_framenum8 type="uint8"  range="[0,9]"  default="0" length="1" description="description param">0</gain_framenum8>
+		<gain_framenum9 type="uint8"  range="[0,9]"  default="0" length="1" description="description param">0</gain_framenum9>
+		<gain_framecase type="uint8"  range="[0,9]"  default="6" length="1" description="description param">6</gain_framecase>
+		<reserved type="uint8"  range="[0,255]"  default="0" length="1" description="description param">0</reserved>
+		<bv_up type="int16"  range="[-600,1600]"  default="1600" length="1" description="description param">1600</bv_up>
+		<bv_down type="int16"  range="[-600,1600]"  default="1550" length="1" description="description param">1550</bv_down>
+		<gain_up type="uint16"  range="[128,32768]"  default="800" length="1" description="description param">800</gain_up>
+		<gain_down type="uint16"  range="[128,32768]"  default="600" length="1" description="description param">600</gain_down>
+	</tuning_param>
+</MFNR_SD_20652>

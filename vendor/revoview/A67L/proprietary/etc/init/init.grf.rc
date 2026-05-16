@@ -1,0 +1,12 @@
+# for grf, set grf props by init.grf.rc
+
+on property:ro.odm.build.fingerprint=*
+    setprop ro.vendor.build.fingerprint ${ro.odm.build.fingerprint}
+
+on property:ro.product.device=*
+    setprop ro.product.vendor.device ${ro.product.device}
+on property:ro.product.model=*
+    setprop ro.product.vendor.model ${ro.product.model}
+on property:ro.product.name=*
+    setprop ro.product.vendor.name ${ro.product.name}
+

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FaceID>
+	<version type="string" length="1">v1.0.0.0</version>
+	<FaceID_enable type="uint8" range="[0,1]" default="1" Descripion="FaceID tuning enable, 1 is open">1</FaceID_enable>
+	<tuning_param>
+		<subModuleEnable>
+			<faceEnable type="uint8" range="[0,1]" default="1" Descripion="face tuning enable, 1 is open">1</faceEnable>
+			<faceQualityEnable type="uint8" range="[0,1]" default="1" Descripion="faceQuality tuning enable, 1 is open">1</faceQualityEnable>
+			<fliveEnable type="uint8" range="[0,1]" default="1" Descripion="flive tuning enable, 1 is open">1</fliveEnable>
+			<fvEnable type="uint8" range="[0,1]" default="1" Descripion="FV tuning enable, 1 is open">1</fvEnable>
+			<eyeAnalyzeEnable type="uint8" range="[0,1]" default="1" Descripion="eyeAnalyze tuning enable, 1 is open">1</eyeAnalyzeEnable>
+		</subModuleEnable>
+		
+		<face>
+			<enrollFaceThrLow type="float" range="[-1,1]" default="0.3" description="reserved parameter">0.3</enrollFaceThrLow>
+			<enrollFaceThrHigh type="float" range="[-1,1]" default="0.9" description="reserved parameter">0.9</enrollFaceThrHigh>
+			<authEyeMode type="uint8" range="[0,1]" default="1" description="eye open requirement for unlock,0 need two eye open,1 need one eye open">1</authEyeMode>
+			<authEyeCloseMode type="uint8" range="[0,1]" default="0" description="eye close judgment mode, 0 is loose mode, 1 is strict mode">0</authEyeCloseMode>
+		</face>
+		
+		<faceQuality>
+			<enrollFarRatioThrLow type="float" range="[0,1]" default="0.2778" description="minimum face ratio required for enroll">0.2778</enrollFarRatioThrLow>
+			<enrollFarRatioThrHigh type="float" range="[0,1]" default="0.625" description="maximum face ratio required for enroll">0.625</enrollFarRatioThrHigh>
+			<enrollFrontOccThr type="uint8" range="[0,100]" default="10" description="reserved parameter">10</enrollFrontOccThr>
+			<enrollUpOccThr type="uint8" range="[0,100]" default="20" description="reserved parameter">20</enrollUpOccThr>
+			<enrollDownOccThr type="uint8" range="[0,100]" default="50" description="reserved parameter">50</enrollDownOccThr>
+			<enrollFrontClarityThr type="uint8" range="[0,100]" default="20" description="reserved parameter">20</enrollFrontClarityThr>
+			<enrollUpClarityThr type="uint8" range="[0,100]" default="10" description="reserved parameter">10</enrollUpClarityThr>
+			<enrollDownClarityThr type="uint8" range="[0,100]" default="10" description="reserved parameter">10</enrollDownClarityThr>
+			<enrollDarkThr type="int" range="[-400,1600]" default="300" description="bv threshold for dark light">300</enrollDarkThr>
+			<enrollBrightThr type="int" range="[-400,1600]" default="1250" description="bv threshold for strong light">1250</enrollBrightThr>
+			<enrollRectBightThr type="uint8" range="(0,255)" default="210" description="fRlum threshold for face overexposed">210</enrollRectBightThr>
+			<enrollRectDarkThr type="uint8" range="(0,255)" default="85" description="fRlum threshold for dark light">85</enrollRectDarkThr>
+			<enrollRectBackThr type="uint8" range="(0,255)" default="80" description="fRlum threshold for back light">80</enrollRectBackThr>
+			<enrollRectHighThr type="uint8" range="(0,255)" default="175" description="fRlum threshold for strong light">175</enrollRectHighThr>
+			<enrollClarityThr type="float" range="[-1,1]" default="0" description="clarity threshold for enroll">0</enrollClarityThr>
+			<enrollYawThr type="int" range="[-90,90]" default="8" description="yaw angle threshold for enroll">8</enrollYawThr>
+			<enrollPitchFrontThrLow type="int" range="[-90,90]" default="-5" description="minimum pitch angle threshold for frontal enroll">-5</enrollPitchFrontThrLow>
+			<enrollPitchFrontThrHigh type="int" range="[-90,90]" default="10" description="maximum pitch angle threshold for frontal enroll">10</enrollPitchFrontThrHigh>
+			<enrollPitchUpThrLow type="int" range="[-90,90]" default="-10" description="reserved parameter">-10</enrollPitchUpThrLow>
+			<enrollPitchUpThrHigh type="int" range="[-90,90]" default="-2" description="reserved parameter">-2</enrollPitchUpThrHigh>
+			<enrollPitchDownThrLow type="int" range="[-90,90]" default="12" description="reserved parameter">12</enrollPitchDownThrLow>
+			<enrollPitchDownThrHigh type="int" range="[-90,90]" default="25" description="reserved parameter">25</enrollPitchDownThrHigh>
+			<authFarRatioThr type="uint8" range="[1,10]" default="6" description="unlocking distance parameter, the larger the value, the farther that supports">6</authFarRatioThr>
+		</faceQuality>
+		
+		<flive>
+			<authEyeOpenThrOne type="uint8" range="[0,100]" default="10" description="reserved parameter">10</authEyeOpenThrOne>
+			<authEyeOpenThrTwo type="uint8" range="[0,100]" default="22" description="reserved parameter">22</authEyeOpenThrTwo>
+			<authEyeOpenThrThree type="uint8" range="[0,100]" default="45" description="reserved parameter">45</authEyeOpenThrThree>
+			<authEyeCloseThrOne type="int" range="[-100,0]" default="-5" description="reserved parameter">-5</authEyeCloseThrOne>
+			<authEyeCloseThrTwo type="int" range="[-100,0]" default="-15" description="reserved parameter">-15</authEyeCloseThrTwo>
+			<authEyeCloseThrThree type="int" range="[-100,0]" default="-45" description="reserved parameter">-45</authEyeCloseThrThree>
+		</flive>
+		
+		<FV>
+			<authNoGoodEnrollThr type="float" range="[-1,1]" default="0.4" description="reserved parameter">0.4</authNoGoodEnrollThr>
+			<authLargeThr type="float" range="[-1,1]" default="0.555" description="similarity threshold for normal light unlock">0.555</authLargeThr>
+			<authLittleThr type="float" range="[-1,1]" default="0.50" description="similarity threshold for abnormal light unlock">0.50</authLittleThr>
+			<fvVersion type="uint8" range="[2,3,5]" default="3" description="FV model version">3</fvVersion>
+		</FV>
+		
+		<eyeAnalyze>
+			<enrollAnaEyeOpenUpThr type="int" range="[-100,100]" default="10" description="eye open threshold for head-up enroll">10</enrollAnaEyeOpenUpThr>
+			<enrollAnaEyeOpenFrontThr type="int" range="[-100,100]" default="20" description="eye open threshold for frontal enroll">20</enrollAnaEyeOpenFrontThr>
+			<authAnaEyeOpenThr type="int" range="[-100,100]" default="10" description="eye open threshold for normal light unlock">10</authAnaEyeOpenThr>
+			<authAnaEyeOpenBackThr type="int" range="[-100,100]" default="-20" description="eye open threshold for back light unlock">-20</authAnaEyeOpenBackThr>
+		</eyeAnalyze>
+	</tuning_param>
+</FaceID>

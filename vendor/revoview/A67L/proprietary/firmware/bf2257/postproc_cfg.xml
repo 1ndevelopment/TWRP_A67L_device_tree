@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+SPDX-FileCopyrightText: 2022-2023 Unisoc (Shanghai) Technologies Co., Ltd
+SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+
+Copyright 2022-2023 Unisoc (Shanghai) Technologies Co., Ltd.
+Licensed under the Unisoc General Software License, version 1.0 (the License);
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+https://www.unisoc.com/en_us/license/UNISOC_GENERAL_LICENSE_V1.0-EN_US
+Software distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OF ANY KIND, either express or implied.
+See the Unisoc General Software License, version 1.0 for more details.
+-->
+<postproc_cfg>
+    <sensor_name>bf2257</sensor_name>
+    <versionid>0x0009001A</versionid>
+    <scenario_num>7</scenario_num>
+    <scenario alia="com">
+        <id>0x0000000000000000</id>
+        <postprocfile_num>4</postprocfile_num>
+        <postprocfile name="USD_param.xml">
+            <param>com</param>
+        </postprocfile>
+        <postprocfile name="mfnr3.xml">
+            <param>com</param>
+        </postprocfile>
+        <postprocfile name="mfnr_sd.xml">
+            <param>com</param>
+        </postprocfile>
+        <postprocfile name="mfsr.xml">
+            <param>com</param>
+        </postprocfile>
+    </scenario>
+    <scenario alia="prv0">
+        <id>0x0000010000000000</id>
+        <postprocfile_num>0</postprocfile_num>
+    </scenario>
+    <scenario alia="prv0_face">
+        <id>0x0000010000010000</id>
+        <postprocfile_num>0</postprocfile_num>
+    </scenario>
+    <scenario alia="cap0">
+        <id>0x0000050000000000</id>
+        <postprocfile_num>0</postprocfile_num>
+    </scenario>
+    <scenario alia="cap0_face">
+        <id>0x0000050000010000</id>
+        <postprocfile_num>0</postprocfile_num>
+    </scenario>
+    <scenario alia="video0">
+        <id>0x0000090000000000</id>
+        <postprocfile_num>0</postprocfile_num>
+    </scenario>
+    <scenario alia="prv0_night">
+        <id>0x0000010100000000</id>
+        <postprocfile_num>0</postprocfile_num>
+    </scenario>
+</postproc_cfg>

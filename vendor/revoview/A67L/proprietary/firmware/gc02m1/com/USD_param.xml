@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+SPDX-FileCopyrightText: 2022-2023 Unisoc (Shanghai) Technologies Co., Ltd
+SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+
+Copyright 2022-2023 Unisoc (Shanghai) Technologies Co., Ltd.
+Licensed under the Unisoc General Software License, version 1.0 (the License);
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+https://www.unisoc.com/en_us/license/UNISOC_GENERAL_LICENSE_V1.0-EN_US
+Software distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OF ANY KIND, either express or implied.
+See the Unisoc General Software License, version 1.0 for more details.
+-->
+<UNIFORM_SD_12345>
+	<tuning_param>
+		<version_major type="int" range="[0,1]" default="1" length="1" description="description param">1</version_major>
+		<version_minor type="int" range="[0,1]" default="0" length="1" description="description param">0</version_minor>
+		<version_micro type="int" range="[0,1]" default="0" length="1" description="description param">0</version_micro>
+		<lib_interval type="int" range="[0,3]" default="0" length="1" description="description param">0</lib_interval>
+		<frame_interval type="int" range="[1,3]" default="2" length="1" description="description param">2</frame_interval>
+		<enabled_range type="int" range="[0,1]" default="1" length="1" description="description param">1</enabled_range>
+		<bv_thd_dark type="int" range="[-600,1600]" default="400" length="1" description="description param">400</bv_thd_dark>
+		<bv_thd_bright type="int" range="[-600,1600]" default="750" length="1" description="description param">750</bv_thd_bright>
+		<avg_img_thd type="int" range="[0,255]" default="90" length="1" description="description param">90</avg_img_thd>
+		<dif_face_thrd_1 type="int" range="[0,255]" default="2" length="1" description="description param">2</dif_face_thrd_1>
+		<dif_face_thrd_2 type="int" range="[0,255]" default="22" length="1" description="description param">22</dif_face_thrd_2>
+		<dif_face_thrd_3 type="int" range="[0,255]" default="50" length="1" description="description param">50</dif_face_thrd_3>
+		<low_th1 type="int" range="[0,255]" default="15" length="1" description="description param">15</low_th1>
+		<high_th1 type="int" range="[0,255]" default="250" length="1" description="description param">250</high_th1>
+		<low_th2 type="int" range="[0,255]" default="60" length="1" description="description param">60</low_th2>
+		<high_th2 type="int" range="[0,255]" default="205" length="1" description="description param">205</high_th2>		
+		<dark_narrow type="float" range="[0,1]" default="0.9" length="1" description="description param">0.9</dark_narrow>
+		<bright_narrow type="float" range="[0,1]" default="0.35" length="1" description="description param">0.35</bright_narrow>
+		<HP_range type="int" range="[0,255]" default="9" length="1" description="description param">9</HP_range>		
+		<f_overexp_thd type="float" range="[0,10]" default="0.65" length="1" description="description param">0.65</f_overexp_thd>
+		<f_underexp_thd type="float" range="[0,1]" default="0.16" length="1" description="description param">0.16</f_underexp_thd>
+		<Hist_steep type="float" range="[0,100000]" default="16.0" length="1" description="description param">16.0</Hist_steep>
+		<low_area_1 type="float" range="[0,1]" default="0.27" length="1" description="description param">0.27</low_area_1>
+		<peak_area_2 type="float" range="[0,1]" default="0.33" length="1" description="description param">0.33</peak_area_2>
+		<peak_dis_2 type="float" range="[0,256]" default="100.0" length="1" description="description param">100.0</peak_dis_2>
+		<peak_area_3 type="float" range="[0,1]" default="0.36" length="1" description="description param">0.36</peak_area_3>
+		<peak_dis_3 type="float" range="[0,256]" default="100.0" length="1" description="description param">100.0</peak_dis_3>
+		<peak_area_4 type="float" range="[0,1]" default="0.45" length="1" description="description param">0.45</peak_area_4>
+		<peak_dis_4 type="float" range="[0,256]" default="110" length="1" description="description param">110.0</peak_dis_4>
+		<peak_area_4e type="float" range="[0,1]" default="0.52" length="1" description="description param">0.52</peak_area_4e>
+		<peak_dis_4e type="float" range="[0,256]" default="195.0" length="1" description="description param">195.0</peak_dis_4e>
+		<peak_area_5e type="float" range="[0,1]" default="0.56" length="1" description="description param">0.56</peak_area_5e>
+		<peak_dis_5e type="float" range="[0,256]" default="200.0" length="1" description="description param">200.0</peak_dis_5e>
+		<peak_area_6e type="float" range="[0,1]" default="0.70" length="1" description="description param">0.70</peak_area_6e>
+		<peak_dis_6e type="float" range="[0,256]" default="190.0" length="1" description="description param">190.0</peak_dis_6e>
+		<peak_area_7e type="float" range="[0,1]" default="0.72" length="1" description="description param">0.72</peak_area_7e>
+		<peak_dis_7e type="float" range="[0,256]" default="190" length="1" description="description param">190.0</peak_dis_7e>
+		<dark_low1 type="int" range="[0,255]" default="40" length="1" description="description param">40</dark_low1>
+		<dark_low2 type="int" range="[0,255]" default="40" length="1" description="description param">40</dark_low2>
+		<dark_low3 type="int" range="[0,255]" default="40" length="1" description="description param">40</dark_low3>
+		<dark_low4 type="int" range="[0,255]" default="40" length="1" description="description param">40</dark_low4>
+		<dark_high1 type="int" range="[0,255]" default="242" length="1" description="description param">242</dark_high1>
+		<dark_high2 type="int" range="[0,255]" default="242" length="1" description="description param">242</dark_high2>
+		<dark_high3 type="int" range="[0,255]" default="242" length="1" description="description param">242</dark_high3>
+		<dark_high4 type="int" range="[0,255]" default="242" length="1" description="description param">242</dark_high4>
+		<dark_low_area type="float" range="[0,1]" default="0.06" length="1" description="description param">0.06</dark_low_area>
+		<dark_high_area type="float" range="[0,10]" default="0.03" length="1" description="description param">0.03</dark_high_area>
+		<f1_reserved1 type="float" range="[0,1000]" default="0" length="1" description="description param">0</f1_reserved1>
+		<f1_reserved2 type="float" range="[0,1000]" default="0" length="1" description="description param">0</f1_reserved2>
+		<f1_reserved3 type="float" range="[0,1000]" default="0" length="1" description="description param">0</f1_reserved3>
+		<f1_reserved4 type="float" range="[0,1000]" default="0" length="1" description="description param">0</f1_reserved4>
+		<f1_reserved5 type="float" range="[0,1000]" default="0" length="1" description="description param">0</f1_reserved5>
+		<i1_reserved1 type="int" range="[0,255]" default="0" length="1" description="description param">0</i1_reserved1>
+		<i1_reserved2 type="int" range="[0,255]" default="0" length="1" description="description param">0</i1_reserved2>
+		<i1_reserved3 type="int" range="[0,255]" default="0" length="1" description="description param">0</i1_reserved3>
+		<i1_reserved4 type="int" range="[0,255]" default="0" length="1" description="description param">0</i1_reserved4>
+		<i1_reserved5 type="int" range="[0,255]" default="0" length="1" description="description param">0</i1_reserved5>
+		<enabled_color type="int" range="[0,1]" default="1" length="1" description="description param">1</enabled_color>
+		<low_thresd type="int" range="[0,255]" default="55" length="1" description="description param">55</low_thresd>
+		<high_thresd type="int" range="[0,255]" default="230" length="1" description="description param">230</high_thresd>
+		<low_thresd_bulb type="int" range="[0,255]" default="25" length="1" description="description param">25</low_thresd_bulb>
+		<high_thresd_bulb type="int" range="[0,255]" default="249" length="1" description="description param">249</high_thresd_bulb>
+		<low_ratio_thrd type="float" range="[0,1]" default="0.48" length="1" description="description param">0.48</low_ratio_thrd>
+		<high_ratio_thrd type="float" range="[0,100]" default="0.12" length="1" description="description param">0.12</high_ratio_thrd>
+		<low_ratio_bulb_thrd type="float" range="[0,1]" default="0.4" length="1" description="description param">0.4</low_ratio_bulb_thrd>
+		<high_ratio_bulb_thrd type="float" range="[0,10]" default="0.01" length="1" description="description param">0.01</high_ratio_bulb_thrd>
+		<scatter_thd type="int" range="[0,500000]" default="150" length="1" description="description param">150</scatter_thd>
+		<low_ratio_bulb_thrd_2 type="float" range="[0,1]" default="0.7" length="1" description="description param">0.7</low_ratio_bulb_thrd_2>
+		<high_ratio_bulb_thrd_2 type="float" range="[0,10]" default="0.18" length="1" description="description param">0.18</high_ratio_bulb_thrd_2>
+		<solid_ratio_thd type="float" range="[0,1]" default="0.5" length="1" description="description param">0.5</solid_ratio_thd>
+		<diff_total_thd type="int" range="[0,765]" default="33" length="1" description="description param">33</diff_total_thd>
+		<thrd_color type="int" range="[0,255]" default="90" length="1" description="description param">90</thrd_color>
+		<thrd_bv_2 type="int" range="[-600,1600]" default="450" length="1" description="description param">450</thrd_bv_2>
+		<range type="int" range="[0,60]" default="4" length="1" description="description param">4</range>
+		<f2_reserved1 type="float" range="[0,1000]" default="0" length="1" description="description param">0</f2_reserved1>
+		<f2_reserved2 type="float" range="[0,1000]" default="0" length="1" description="description param">0</f2_reserved2>
+		<f2_reserved3 type="float" range="[0,1000]" default="0" length="1" description="description param">0</f2_reserved3>
+		<f2_reserved4 type="float" range="[0,1000]" default="0" length="1" description="description param">0</f2_reserved4>
+		<f2_reserved5 type="float" range="[0,1000]" default="0" length="1" description="description param">0</f2_reserved5>
+		<i2_reserved1 type="int" range="[0,255]" default="0" length="1" description="description param">0</i2_reserved1>
+		<i2_reserved2 type="int" range="[0,255]" default="0" length="1" description="description param">0</i2_reserved2>
+		<i2_reserved3 type="int" range="[0,255]" default="0" length="1" description="description param">0</i2_reserved3>
+		<i2_reserved4 type="int" range="[0,255]" default="0" length="1" description="description param">0</i2_reserved4>
+		<i2_reserved5 type="int" range="[0,255]" default="0" length="1" description="description param">0</i2_reserved5>
+		<enabled_movement type="int" range="[0,1]" default="1" length="1" description="description param">1</enabled_movement>
+		<using_gyro_length type="int" range="[2,80]" default="20" length="1" description="description param">20</using_gyro_length>
+		<th1_tri type="float" range="[0,200]" default="0.03" length="1" description="description param">0.03</th1_tri>
+		<th2_han type="float" range="[0,50]" default="0.08" length="1" description="description param">0.08</th2_han>
+		<thrd_tripod type="float" range="[0,50]" default="0.06" length="1" description="description param">0.06</thrd_tripod>
+		<thrd_stable type="float" range="[0,50]" default="0.06" length="1" description="description param">0.06</thrd_stable>
+		<diff_thrd type="uint8" range="[0,255]" default="33" length="1" description="description param">33</diff_thrd>
+		<add1 type="uint8" range="[0,255]" default="0" length="1" description="description param">0</add1>
+		<add2 type="uint8" range="[0,255]" default="0" length="1" description="description param">0</add2>
+		<add3 type="uint8" range="[0,255]" default="0" length="1" description="description param">0</add3>
+		<search_range type="int" range="[0,255]" default="64" length="1" description="description param">64</search_range>
+		<BV_thd_MD type="int" range="[-600,1600]" default="600" length="1" description="description param">600</BV_thd_MD>
+		<avg_img_thd_MD type="int" range="[0,255]" default="130" length="1" description="description param">130</avg_img_thd_MD>
+		<f3_reserved1 type="float" range="[0,1000]" default="0" length="1" description="description param">0</f3_reserved1>
+		<f3_reserved2 type="float" range="[0,1000]" default="0" length="1" description="description param">0</f3_reserved2>
+		<f3_reserved3 type="float" range="[0,1000]" default="0" length="1" description="description param">0</f3_reserved3>
+		<f3_reserved4 type="float" range="[0,1000]" default="0" length="1" description="description param">0</f3_reserved4>
+		<f3_reserved5 type="float" range="[0,1000]" default="0" length="1" description="description param">0</f3_reserved5>
+		<i3_reserved1 type="int" range="[0,255]" default="0" length="1" description="description param">0</i3_reserved1>
+		<i3_reserved2 type="int" range="[0,255]" default="0" length="1" description="description param">0</i3_reserved2>
+		<i3_reserved3 type="int" range="[0,255]" default="0" length="1" description="description param">0</i3_reserved3>
+		<i3_reserved4 type="int" range="[0,255]" default="0" length="1" description="description param">0</i3_reserved4>
+		<i3_reserved5 type="int" range="[0,255]" default="0" length="1" description="description param">0</i3_reserved5>
+		<enabled_in_out type="int" range="[0,1]" default="1" length="1" description="description param">1</enabled_in_out>
+		<Acc_z_down_tmp0 type="float" range="[-15,15]" default="-15" length="1" description="description param">-15</Acc_z_down_tmp0>
+		<Acc_z_down_tmp1 type="float" range="[-15,15]" default="-7.9" length="1" description="description param">-7.9</Acc_z_down_tmp1>
+		<Acc_z_down_tmp2 type="float" range="[-15,15]" default="-5.8" length="1" description="description param">-5.8</Acc_z_down_tmp2>
+		<Acc_z_down_tmp3 type="float" range="[-15,15]" default="-2.5" length="1" description="description param">-2.5</Acc_z_down_tmp3>
+		<Acc_z_down_tmp4 type="float" range="[-15,15]" default="1.9" length="1" description="description param">1.9</Acc_z_down_tmp4>
+		<Acc_z_down_tmp5 type="float" range="[-15,15]" default="5.7" length="1" description="description param">5.7</Acc_z_down_tmp5>
+		<Acc_z_down_tmp6 type="float" range="[-15,15]" default="8.2" length="1" description="description param">8.2</Acc_z_down_tmp6>
+		<Acc_z_up_tmp0 type="float" range="[-15,15]" default="-7.3" length="1" description="description param">-7.3</Acc_z_up_tmp0>
+		<Acc_z_up_tmp1 type="float" range="[-15,15]" default="-5.2" length="1" description="description param">-5.2</Acc_z_up_tmp1>
+		<Acc_z_up_tmp2 type="float" range="[-15,15]" default="-1.9" length="1" description="description param">-1.9</Acc_z_up_tmp2>
+		<Acc_z_up_tmp3 type="float" range="[-15,15]" default="2.5" length="1" description="description param">2.5</Acc_z_up_tmp3>
+		<Acc_z_up_tmp4 type="float" range="[-15,15]" default="6.3" length="1" description="description param">6.3</Acc_z_up_tmp4>
+		<Acc_z_up_tmp5 type="float" range="[-15,15]" default="8.8" length="1" description="description param">8.8</Acc_z_up_tmp5>
+		<Acc_z_up_tmp6 type="float" range="[-15,15]" default="15" length="1" description="description param">15</Acc_z_up_tmp6>
+		<light_up_tmp0 type="int" range="[0,900000]" default="50" length="1" description="description param">50</light_up_tmp0>
+		<light_up_tmp1 type="int" range="[0,900000]" default="60" length="1" description="description param">60</light_up_tmp1>
+		<light_up_tmp2 type="int" range="[0,900000]" default="80" length="1" description="description param">80</light_up_tmp2>
+		<light_up_tmp3 type="int" range="[0,900000]" default="110" length="1" description="description param">110</light_up_tmp3>
+		<light_up_tmp4 type="int" range="[0,900000]" default="150" length="1" description="description param">150</light_up_tmp4>
+		<light_up_tmp5 type="int" range="[0,900000]" default="200" length="1" description="description param">200</light_up_tmp5>
+		<light_up_tmp6 type="int" range="[0,900000]" default="260" length="1" description="description param">260</light_up_tmp6>
+		<light_down_tmp0 type="int" range="[0,900000]" default="5" length="1" description="description param">5</light_down_tmp0>
+		<light_down_tmp1 type="int" range="[0,900000]" default="13" length="1" description="description param">13</light_down_tmp1>
+		<light_down_tmp2 type="int" range="[0,900000]" default="21" length="1" description="description param">21</light_down_tmp2>
+		<light_down_tmp3 type="int" range="[0,900000]" default="29" length="1" description="description param">29</light_down_tmp3>
+		<light_down_tmp4 type="int" range="[0,900000]" default="37" length="1" description="description param">37</light_down_tmp4>
+		<light_down_tmp5 type="int" range="[0,900000]" default="45" length="1" description="description param">45</light_down_tmp5>
+		<light_down_tmp6 type="int" range="[0,900000]" default="53" length="1" description="description param">53</light_down_tmp6>
+		<e_dark_value type="int" range="[0,90000]" default="1" length="1" description="description param">1</e_dark_value>
+		<f4_reserved1 type="float" range="[0,1000]" default="0" length="1" description="description param">0</f4_reserved1>
+		<f4_reserved2 type="float" range="[0,1000]" default="0" length="1" description="description param">0</f4_reserved2>
+		<f4_reserved3 type="float" range="[0,1000]" default="0" length="1" description="description param">0</f4_reserved3>
+		<f4_reserved4 type="float" range="[0,1000]" default="0" length="1" description="description param">0</f4_reserved4>
+		<f4_reserved5 type="float" range="[0,1000]" default="0" length="1" description="description param">0</f4_reserved5>
+		<i4_reserved1 type="int" range="[0,255]" default="0" length="1" description="description param">0</i4_reserved1>
+		<i4_reserved2 type="int" range="[0,255]" default="0" length="1" description="description param">0</i4_reserved2>
+		<i4_reserved3 type="int" range="[0,255]" default="0" length="1" description="description param">0</i4_reserved3>
+		<i4_reserved4 type="int" range="[0,255]" default="0" length="1" description="description param">0</i4_reserved4>
+		<i4_reserved5 type="int" range="[0,255]" default="0" length="1" description="description param">0</i4_reserved5>
+	</tuning_param>
+</UNIFORM_SD_12345>

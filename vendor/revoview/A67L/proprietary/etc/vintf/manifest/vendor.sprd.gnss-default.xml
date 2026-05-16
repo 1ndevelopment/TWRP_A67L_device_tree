@@ -1,0 +1,22 @@
+<!--
+     SPDX-FileCopyrightText: 2016-2023 Unisoc (Shanghai) Technologies Co., Ltd
+     SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+-->
+
+<manifest version="1.0" type="device">
+    <hal format="aidl">
+        <name>android.hardware.gnss</name>
+        <version>2</version>
+        <interface>
+            <name>IGnss</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.sprd.hardware.gnss</name>
+        <interface>
+            <name>IUnisocGnss</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+</manifest>

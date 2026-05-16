@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+     SPDX-FileCopyrightText: 2016-2023 Unisoc (Shanghai) Technologies Co., Ltd
+     SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+-->
+<modem_info>
+	<partion_cnt val="2"/>
+	<partion_item>
+		<partition00 base="0x800000"     size="0x40000"   name="sp_aon"	   mini_dump_flag="1"/>
+		<partition01 base="0x8af2f000"   size="0x1000"    name="cp_assert" mini_dump_flag="1"/>
+	</partion_item>
+</modem_info>

@@ -1,0 +1,49 @@
+on post-fs-data
+    #Add bluetooth mac address dir
+    mkdir /data/vendor/bluetooth 0770 bluetooth bluetooth
+
+on property:vendor.all.modules.ready=1
+    chown system system /proc/mdbg
+    chown system root /proc/mdbg/assert
+    chown system system /proc/mdbg/at_cmd
+    chown system root /proc/mdbg/loopcheck
+    chmod 770 /proc/mdbg
+    chmod 760 /proc/mdbg/assert
+    chmod 760 /proc/mdbg/at_cmd
+    chmod 760 /proc/mdbg/loopcheck
+
+    chown system system /sys/class/misc/wcn/devices/sw_ver
+    chown system system /sys/class/misc/wcn/devices/hw_ver
+    chown system system /sys/class/misc/wcn/devices/loglevel
+    chown system system /sys/class/misc/wcn/devices/armlog_status
+    chown system system /sys/class/misc/wcn/devices/reset_dump
+    chown system system /sys/class/misc/wcn/devices/atcmd
+
+on property:sys.boot_completed=1
+    chmod 660 /sys/class/rfkill/rfkill0/state
+    chown bluetooth net_bt_admin /sys/class/rfkill/rfkill0/state
+    chmod 660 /sys/class/rfkill/rfkill0/type
+    chown bluetooth net_bt_admin /sys/class/rfkill/rfkill0/type
+    chmod 660 /sys/class/rfkill/rfkill1/state
+    chown bluetooth net_bt_admin /sys/class/rfkill/rfkill1/state
+    chmod 660 /sys/class/rfkill/rfkill1/type
+    chown bluetooth net_bt_admin /sys/class/rfkill/rfkill1/type
+
+    chmod 660 /sys/devices/platform/wcn_bt/dumpmem
+    chown bluetooth net_bt_admin /sys/devices/platform/wcn_bt/dumpmem
+on cali-fs
+    insmod ${ro.vendor.ko.mount.point}/socko/sprdbt_tty.ko
+    chmod 660 /sys/class/rfkill/rfkill0/state
+    chown bluetooth net_bt_admin /sys/class/rfkill/rfkill0/state
+    chmod 660 /sys/class/rfkill/rfkill0/type
+    chown bluetooth net_bt_admin /sys/class/rfkill/rfkill0/type
+    chmod 660 /sys/class/rfkill/rfkill1/state
+    chown bluetooth net_bt_admin /sys/class/rfkill/rfkill1/state
+    chmod 660 /sys/class/rfkill/rfkill1/type
+    chown bluetooth net_bt_admin /sys/class/rfkill/rfkill1/type
+
+    insmod ${ro.vendor.ko.mount.point}/socko/sprd_fm.ko
+    mkdir /data/vendor/bluetooth 0770 bluetooth bluetooth
+
+    chmod 660 /sys/devices/platform/wcn_bt/dumpmem
+    chown bluetooth net_bt_admin /sys/devices/platform/wcn_bt/dumpmem

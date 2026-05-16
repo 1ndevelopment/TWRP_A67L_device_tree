@@ -1,0 +1,5 @@
+#wcn_chr service
+service vendor.wcn_chr /vendor/bin/wcn_chr
+    class late_start
+    user 12345
+

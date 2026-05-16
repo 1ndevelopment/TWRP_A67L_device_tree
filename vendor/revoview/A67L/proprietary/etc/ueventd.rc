@@ -1,0 +1,255 @@
+# device/sprd/vnd_mpool/module/vendor/audio/main.ueventd.rc
+# SPDX-FileCopyrightText: 2016-2023 Unisoc (Shanghai) Technologies Co., Ltd
+# SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+
+/dev/apipe-pcm          0660     system      audio
+/dev/apipe-cmd-in       0660     system      audio
+/dev/apipe-cmd-out      0660     system      audio
+/dev/vbc_turning        0660     audioserver      audio
+/dev/vbc_turning*        0660     audioserver      audio
+# device/sprd/vnd_mpool/module/vendor/display/sr/main.ueventd.rc
+# SPDX-FileCopyrightText: 2016-2023 Unisoc (Shanghai) Technologies Co., Ltd
+# SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+
+/dev/block/by-name/logo          0660     system      system
+
+# device/sprd/vnd_mpool/module/vendor/modem/msoc/sharkl3/sharkl3.ueventd.rc
+# SPDX-FileCopyrightText: 2016-2023 Unisoc (Shanghai) Technologies Co., Ltd
+# SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+
+/dev/block/by-name/l_*       0660     system      system
+/dev/block/by-name/calinv        0660     system      system
+/dev/block/by-name/pm_sys*       0660     system      system
+/vendor/odm/etc/ncfg_def/Operator_Bin/*       0660     system      system
+/odm/etc/ncfg_def/Operator_Bin/*       0660     system      system
+# device/sprd/vnd_mpool/module/vendor/sensor/main.ueventd.rc
+# SPDX-FileCopyrightText: 2016-2023 Unisoc (Shanghai) Technologies Co., Ltd
+# SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+
+/dev/iio:device*          0660     system     root
+/sys/class/sprd_sensorhub/sensor_hub          batch                      0660         system root
+/sys/class/sprd_sensorhub/sensor_hub          enable                     0660         system root
+/sys/class/sprd_sensorhub/sensor_hub          flush                      0660         system root
+/sys/class/sprd_sensorhub/sensor_hub          version                    0660         system root
+/sys/class/sprd_sensorhub/sensor_hub          logctl                     0660         system root
+/sys/class/sprd_sensorhub/sensor_hub          calibrator_cmd             0660         system root
+/sys/class/sprd_sensorhub/sensor_hub          calibrator_data            0660         system root
+/sys/class/sprd_sensorhub/sensor_hub          cali_download              0660         system root
+/sys/class/sprd_sensorhub/sensor_hub          mag_cali_flag              0660         system root
+/sys/class/sprd_sensorhub/sensor_hub          sensorhub                  0660         system root
+/sys/class/sprd_sensorhub/sensor_hub          raw_data_als               0660         system root
+/sys/class/sprd_sensorhub/sensor_hub          raw_data_ps                0660         system root
+/sys/class/sprd_sensorhub/sensor_hub          light_sensor_calibrator    0660         system root
+/sys/class/sprd_sensorhub/sensor_hub          sensor_info                0660         system system
+/sys/class/sprd_sensorhub/sensor_hub          sensorlist                 0660         system root
+/sys/class/sprd_sensorhub/sensor_hub          virtual_handle             0660         system root
+
+/dev/revo_tp_prox      0660  system   system
+# device/sprd/vnd_mpool/module/vendor/wcn/gnss/main.ueventd.rc
+# SPDX-FileCopyrightText: 2016-2023 Unisoc (Shanghai) Technologies Co., Ltd
+# SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+
+/dev/data0_gnss         0666     system      system
+/dev/block/by-name/gnssmodem_a   0660   system  root
+/dev/block/by-name/gnssmodem_b   0660   system  root
+# device/sprd/vnd_mpool/module/vendor/wcn/gnss/msoc/sharkl3/sharkl3.ueventd.rc
+# SPDX-FileCopyrightText: 2016-2023 Unisoc (Shanghai) Technologies Co., Ltd
+# SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+
+/dev/block/by-name/gpsgl_a          0660     system      root
+/dev/block/by-name/gpsgl_b          0660     system      root
+/dev/block/by-name/gpsbd_a          0660     system      root
+/dev/block/by-name/gpsbd_b          0660     system      root
+# device/sprd/vnd_mpool/module/vendor/ueventd/main.ueventd.rc
+# SPDX-FileCopyrightText: 2016-2023 Unisoc (Shanghai) Technologies Co., Ltd
+# SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+
+/dev/sttygnss0          0660     system      system
+/dev/spipe_gnss0        0660     system      system
+/dev/spipe_gnss1        0660     system      system
+/dev/stime_pm           0660     system      system
+/dev/stime_ch           0660     system      system
+
+/dev/wcn_gnss_dump      0660     system      system
+/dev/slog_gnss          0660     system      system
+/dev/slog_wcn0          0660     system      system
+/dev/ttyS3              0660     system      system
+/dev/ttyS4              0660     system      system
+/dev/ttyS0              0660     system      system
+/dev/gnss_pmnotify_ctl  0660     system      system
+/dev/power_ctl          0660     system      system
+/dev/gnss_dbg           0660     system      system
+/dev/fm                 0660     media       media
+/dev/ttyM0              0660     bluetooth   net_bt_admin
+/dev/ttyM1              0660     bluetooth   net_bt_admin
+/dev/trusty-ipc-dev0    0660     system      system
+/dev/tshm               0660     system      system
+/dev/tui_dev            0660     system      system
+/dev/madev0             0660     system      system
+/dev/sttybt0            0660     bluetooth   net_bt_admin
+/dev/ttyBT0             0660     bluetooth   net_bt_admin
+
+/dev/trusty-ipc-dev0    0660     system      system
+/dev/stty_lte*          0660     radio       system
+/dev/slog_lte           0660     system      system
+/dev/slog_pm            0660     system      system
+/dev/slog_ch            0660     system      system
+/dev/sctl_pm            0660     system      system
+/dev/sctl_ch            0660     system      system
+/dev/sdiag_lte          0660     system      system
+/dev/slog_ldsp          0660     system      system
+/dev/spipe_lte*         0660     system      system
+/dev/sprd_time_sync     0660     system      system
+/dev/spipe_lte5         0660     radio      system
+/dev/spipe_lte4         0660     media       audio
+/dev/spipe_lte6         0660     media       audio
+/dev/spipe_lte9         0660     radio       radio
+/dev/spipe_lte14        0660     audioserver audio
+/dev/spipe_pm*          0666     system      system
+/dev/spipe_ch*          0660     system      system
+/dev/snv_lte            0660     system      system
+
+/dev/stty_nr*           0660     radio       system
+/dev/slog_nr            0660     system      system
+/dev/slog_phy           0660     system      system
+/dev/sdiag_nr           0660     system      system
+/dev/spipe_nr*          0660     system      system
+/dev/spipe_nr5          0660     radio      system
+/dev/spipe_nr4          0660     media       audio
+/dev/spipe_nr6          0660     media       audio
+/dev/spipe_nr9          0660     radio       radio
+/dev/spipe_nr14         0660     media       audio
+/dev/snv_nr		0660     system      system
+/dev/vser               0660     system      system
+/dev/ttyGS*             0660     system      system
+
+/dev/ion                0666     system      graphics
+/dev/sprd_ion           0666     system      graphics
+/dev/sprd_dmabuf           0666     system      graphics
+/dev/sprd_cma           0666     system      graphics
+/dev/dma_heap/uncached_carveout_mm			0666     system      graphics
+/dev/dma_heap/uncached_carveout_oem			0666     system      graphics
+/dev/dma_heap/uncached_carveout_dispc		0666     system      graphics
+/dev/dma_heap/carveout_fd			0666     system      graphics
+/dev/dma_heap/protected				0666     system      graphics
+/dev/gsp                0660     system      graphics
+
+/dev/mali0              0666     system      graphics
+/dev/pvr_sync           0666     system      graphics
+/dev/sprd_jpg           0666     system      camera
+/dev/sprd_jpg1          0660     system      camera
+/dev/sprd_vsp           0660     system      camera
+/dev/vdma               0660     system      camera
+/dev/vpu_enc0           0660     system      camera
+/dev/vpu_enc1           0660     system      camera
+/dev/sprd_vpp           0660     system      camera
+/dev/sprd_vsp_enc       0660     system      camera
+
+/dev/sprd_image         0660     system      camera
+/dev/sprd_isp           0660     system      camera
+/dev/sprd_sensor        0660     system      camera
+/dev/sprd_cpp           0660     system      camera
+
+/sys/devices/system/cpu/cpu* /cpufreq/interactive/boost 0660 media system
+/sys/devices/system/cpu/cpu* /cpufreq/interactive/boostpulse 0660 system system
+/sys/devices/system/cpu/cpu* /cpufreq/interactive/boostpulse_duration 0660 system system
+/sys/devices/system/cpu/cpu* /cpufreq/interactive/timer_rate 0660 system system
+/sys/devices/system/cpu/cpu* /cpufreq/interactive/hispeed_freq 0660 system system
+/sys/devices/system/cpu/cpu* /cpufreq/interactive/target_loads 0660 system system
+/sys/devices/system/cpu/cpu* /cpufreq/interactive/above_hispeed_delay 0660 system system
+/sys/devices/system/cpu/cpu* /cpufreq/interactive/timer_slack 0660 system system
+/sys/devices/system/cpu/cpu* /cpufreq/interactive/min_sample_time 0660 system system
+/sys/devices/system/cpu/cpu* /cpufreq/interactive/io_is_busy 0660 system system
+
+/sys/class/misc/gnss_common_ctl gnss_power_enable 0220 system system
+/sys/class/misc/gnss_common_ctl gnss_dump         0660 system system
+/sys/class/misc/gnss_common_ctl gnss_subsys       0660 system system
+
+/sys/devices/system/cpu/cpu* /cpufreq/scaling_governor 0664 system system
+/sys/devices/system/cpu/cpu* /cpufreq/scaling_setspeed 0660 system system
+
+/sys/class/power_supply/battery/charger.0 stop_charge 0664 system system
+
+/dev/input/event*   0660     system      input
+/dev/map_user       0660     system      system
+
+/dev/iio:device*    0660     system      system
+
+/dev/rtc*           0660     system      system
+
+/dev/block/by-name/gnssmodem       0660     system      root
+/dev/block/by-name/gnssmodem_a     0660     system      root
+
+/dev/rpmb0           0660     system      system
+/dev/tmc_etb         0660     system      system
+
+/sys/class/modem/debug-log/channel 0664    system    system
+/sys/class/modem/serdes0/channel   0664    system    system
+/sys/class/modem/serdes1/channel   0664    system    system
+/sys/class/modem/serdes0/freq	   0664    system    system
+/sys/class/modem/serdes1/freq      0664    system    system
+
+/dev/dmc_mpu       0660     system     system
+/sys/class/display/dphy0              hop                  0660    system        system
+/sys/class/display/dphy0              ssc                  0660    system        system
+/sys/class/display/panel0             name                 0660    system        system
+/sys/class/display/dispc0             vsync_rate_report    0666    graphics      system
+/sys/class/display/dispc0             bg_color             0660    cameraserver  system
+/sys/class/display/dispc0             refresh              0660    cameraserver  system
+/sys/class/display/dispc0             disable_flip         0660    cameraserver  system
+/sys/class/backlight/sprd_backlight   brightness           0664    system        system
+/sys/class/backlight/sprd_backlight   max_brightness       0444    system        system
+/sys/class/display/backlight          max_brightness       0664    system        system
+/sys/class/display/panel0             resolution           0664    system        system
+/sys/class/display/dispc0             irq_register         0664    system        system
+/sys/class/display/dispc0             irq_unregister       0664    system        system
+/sys/class/display/panel0             esd_check_enable     0664    system        system
+/sys/class/display/dispc0/PQ          slp                  0664    system        system
+/sys/class/display/dispc0/PQ          cm                   0664    system        system
+/sys/class/display/dispc0/PQ          gamma                0664    system        system
+/sys/class/display/dispc0/PQ          hsv                  0664    system        system
+/sys/class/display/dispc0/PQ          epf                  0664    system        system
+/sys/class/display/dispc0/PQ          scl                  0664    system        system
+/sys/class/display/dispc0/PQ          ltm                  0664    system        system
+/sys/class/display/dispc0/PQ          lut3d                0664    system        system
+/sys/class/display/dispc0/PQ          enable               0664    system        system
+/sys/class/display/dispc0/PQ          disable              0664    system        system
+/sys/class/display/dispc0/PQ          cabc_mode            0664    system        system
+/sys/class/display/dispc0/PQ          cabc_hist            0664    system        system
+/sys/class/display/dispc0/PQ          cabc_gain            0664    system        system
+/sys/class/display/dispc0/PQ          cabc_bl_fix          0664    system        system
+/sys/class/display/dispc0/PQ          cabc_cur_bl          0664    system        system
+/sys/class/display/dispc0/PQ          vsync_count          0664    system        system
+/sys/class/display/dispc0/PQ          frame_no             0664    system        system
+/sys/class/display/dispc0/PQ          cabc_param           0664    system        system
+/sys/class/display/dispc0/PQ          cabc_run             0664    system        system
+/sys/class/display/dispc0/PQ          cabc_state           0664    system        system
+/sys/class/display/bridge             hop                  0660    system        system
+/sys/class/display/bridge             ssc                  0660    system        system
+# device/sprd/vnd_mpool/module/vendor/ueventd/msoc/sharkl3/sharkl3.ueventd.rc
+# SPDX-FileCopyrightText: 2016-2023 Unisoc (Shanghai) Technologies Co., Ltd
+# SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+
+/dev/block/by-name/miscdata       0660     system      system
+/dev/block/by-name/persist       0660     system      system
+/dev/block/by-name/system       0660     system      system
+/dev/block/by-name/gpsgl       0660    system      root
+/dev/block/by-name/gpsbd       0660     system      root
+/dev/block/by-name/gnssmodem       0660     system      root
+/dev/block/by-name/sysdumpdb        0660     system     system
+/sys/devices/platform/soc/soc:aon/41800000.spi/spi_master/spi4/spi4.0/41800000.spi:pmic@0:led-controller@180/leds/sc27xx:red hw_pattern 0660 system system
+/sys/devices/platform/soc/soc:aon/41800000.spi/spi_master/spi4/spi4.0/41800000.spi:pmic@0:led-controller@180/leds/sc27xx:green hw_pattern 0660 system system
+/sys/devices/platform/soc/soc:aon/41800000.spi/spi_master/spi4/spi4.0/41800000.spi:pmic@0:led-controller@180/leds/sc27xx:blue hw_pattern 0660 system system
+# device/sprd/vnd_mpool/module/vendor/partition/main.ueventd.rc
+# SPDX-FileCopyrightText: 2016-2023 Unisoc (Shanghai) Technologies Co., Ltd
+# SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+
+/dev/block/mmcblk1p*    0660     root      system
+/dev/block/mmcblk0rpmb  0660     system      system
+/dev/mmcblk0rpmb        0660     system      system
+# device/sprd/vnd_mpool/module/vendor/rebootescrow/march/arm64/arm64.ueventd.rc
+# SPDX-FileCopyrightText: 2016-2023 Unisoc (Shanghai) Technologies Co., Ltd
+# SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+
+/dev/block/memdisk0p1 0770 system system
+/dev/block/pmem0 0770 system system

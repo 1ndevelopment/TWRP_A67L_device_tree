@@ -1,0 +1,43 @@
+# SPDX-FileCopyrightText: 2016-2023 Unisoc (Shanghai) Technologies Co., Ltd
+# SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+
+import /vendor/etc/init/hw/init.${ro.hardware}.usb.rc
+import /vendor/etc/init/hw/init.ram.rc
+import /vendor/etc/init/hw/init.storage.rc
+import /vendor/etc/init/hw/init.cali.rc
+
+on init
+    start watchdogd
+    chmod 0660 /sys/power/wakeup_count
+
+on post-fs-data
+    setprop vold.post_fs_data_done 1
+    # setprop debug.sf.latch_unsignaled 1
+
+# Set watchdog timer to 30 seconds and pet it every 10 seconds to get a 20 second margin
+service watchdogd /system/bin/watchdogd 10 30
+    class core
+    oneshot
+    seclabel u:r:watchdogd:s0
+
+on early-boot
+    # Wait for insmod_sh to finish all modules
+    # wait_for_prop vendor.all.modules.ready 1
+
+on boot
+#UNISOC: Support aging test charging limit function
+    chown system system /sys/class/power_supply/battery/charger.0/stop_charge
+    chmod 0664 /sys/class/power_supply/battery/charger.0/stop_charge
+
+on early-init
+    mkdir /dev/input 0755 root root
+
+on early-init
+    start insmod-sh
+
+service insmod-sh /vendor/bin/init.insmod.sh /vendor/lib/modules/init.insmod.cfg ${ro.bootmode}
+    class main
+    user root
+    group root system
+    disabled
+    oneshot

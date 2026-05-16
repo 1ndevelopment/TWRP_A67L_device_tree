@@ -1,0 +1,10 @@
+service vendor.ifaa-default /vendor/bin/hw/vendor.sprd.hardware.ifaa-service
+    interface aidl vendor.sprd.hardware.ifaa.IIfaa/default
+    class hal
+    user system
+    group system
+    disabled
+
+on property:ro.vendor.ifaa.support=true
+     start vendor.ifaa-default
+

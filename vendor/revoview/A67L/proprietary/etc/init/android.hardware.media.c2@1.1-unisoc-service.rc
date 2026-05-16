@@ -1,0 +1,9 @@
+# SPDX-FileCopyrightText: 2022 Unisoc (Shanghai) Technologies Co., Ltd
+# SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+
+service media.unisoc.codec2 /vendor/bin/hw/android.hardware.media.c2@1.1-unisoc-service
+    class hal
+    user mediacodec
+    group system camera mediadrm drmrpc
+    ioprio rt 4
+    writepid /dev/cpuset/foreground/tasks

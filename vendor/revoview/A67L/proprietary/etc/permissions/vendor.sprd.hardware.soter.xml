@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2016-2023 Unisoc (Shanghai) Technologies Co., Ltd
+     SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+-->
+
+<!-- This is the standard set of features for soter. -->
+<permissions>
+    <feature name="vendor.sprd.hardware.soter" />
+</permissions>

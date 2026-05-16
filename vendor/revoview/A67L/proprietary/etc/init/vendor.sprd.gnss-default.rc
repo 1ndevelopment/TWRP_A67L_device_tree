@@ -1,0 +1,8 @@
+##
+## SPDX-FileCopyrightText: 2016-2023 Unisoc (Shanghai) Technologies Co., Ltd
+## SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+
+service vendor.sprd.hardware.gnss-service /vendor/bin/hw/vendor.sprd.hardware.gnss-service
+    class hal
+    user root
+    group system

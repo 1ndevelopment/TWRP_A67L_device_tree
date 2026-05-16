@@ -1,0 +1,4 @@
+service vendor.tool-default /vendor/bin/hw/vendor.sprd.hardware.tool-service
+    class hal
+    user system
+    group system root
