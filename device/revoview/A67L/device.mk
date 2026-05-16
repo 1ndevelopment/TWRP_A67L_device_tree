@@ -3,6 +3,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Vendor proprietary files
 $(call inherit-product-if-exists, vendor/revoview/A67L/device-vendor.mk)
 
+# OFRP (OrangeFox)
+$(call inherit-product-if-exists, vendor/recovery/OrangeFox/OrangeFox.mk)
+
 # Device identifiers
 PRODUCT_BRAND := FOXXD
 PRODUCT_DEVICE := A67L
@@ -42,3 +45,6 @@ TARGET_COPY_OUT_SYSTEM := system
 TARGET_COPY_OUT_SYSTEM_EXT := system_ext
 TARGET_COPY_OUT_PRODUCT := product
 TARGET_COPY_OUT_VENDOR := vendor
+
+# A/B updater (required for both TWRP and OFRP)
+AB_OTA_UPDATER := true

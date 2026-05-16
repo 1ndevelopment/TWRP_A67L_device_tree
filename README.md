@@ -1,4 +1,4 @@
-# TWRP Device Tree for FOXXD A67L (SC9863A)
+# TWRP / OrangeFox Device Tree for FOXXD A67L (SC9863A)
 
 ![A67L Logo](https://cdn.softtels.com/products/fZmQCFdns31g7o42hqusM7m6xjfMpDjnRDzOUSb7.png)
 
@@ -89,6 +89,8 @@ Cmdline: `console=ttyS1,115200n8 bootconfig bootconfig`
 
 ### Setup
 
+#### TWRP (OmniROM)
+
 ```bash
 # Initialize OmniROM repo
 repo init -u https://github.com/omnirom/android.git -b android-14
@@ -106,6 +108,25 @@ lunch omni_A67L-userdebug
 make recoveryimage
 ```
 
+#### OrangeFox
+
+```bash
+# Initialize OrangeFox repo
+repo init -u https://gitlab.com/OrangeFox/Manifest.git -b fox_12.1
+repo sync -j$(nproc)
+
+# Clone this device tree
+git clone <this-repo> device/revoview/A67L
+
+# Clone vendor blobs
+git clone <vendor-repo> vendor/revoview/A67L
+
+# Build
+source build/envsetup.sh
+lunch fox_A67L-userdebug
+mka recoveryimage
+```
+
 ### Using Prebuilt Kernel
 
 The kernel is included as `device/revoview/A67L/Image.gz-dtb` (extracted from stock boot_a.bin). SHA256:
@@ -120,6 +141,25 @@ To build from source instead, uncomment in BoardConfig.mk:
 ```
 
 Kernel source would need to be placed at `kernel/revoview/A67L/` (SC9863A android14-5.15 GKI).
+
+## Building OrangeFox
+
+```bash
+# Initialize OrangeFox repo
+repo init -u https://gitlab.com/OrangeFox/Manifest.git -b fox_12.1
+repo sync -j$(nproc)
+
+# Clone this device tree
+git clone <this-repo> device/revoview/A67L
+
+# Clone vendor blobs
+git clone <vendor-repo> vendor/revoview/A67L
+
+# Build
+source build/envsetup.sh
+lunch fox_A67L-userdebug
+mka recoveryimage
+```
 
 ## Stock Firmware References
 
@@ -151,10 +191,12 @@ stock_fw/super_out/
 └── extracted/{system,vendor,product,system_ext,odm,vendor_dlkm,system_dlkm}/
 ```
 
-## TWRP-Specific Parameters
+## Recovery-Specific Parameters
+
+This device tree supports both TWRP (`TW_*`) and OrangeFox (`OF_*` / `FOX_*`) variables.
 
 ### Untested (need physical device verification)
-- `TW_BRIGHTNESS_PATH` — guessed as `/sys/class/backlight/panel0-backlight/brightness`
+- `TW_BRIGHTNESS_PATH` / brightness sysfs — guessed as `/sys/class/backlight/panel0-backlight/brightness`
 - `TW_MAX_BRIGHTNESS` / `TW_DEFAULT_BRIGHTNESS` — guessed 2047/1200
 - `TW_INPUT_BLACKLIST` — set to accelerometer only
 - `TW_SCREEN_BLANK_ON_BOOT` / `TW_NO_SCREEN_BLANK` — guessed
@@ -171,13 +213,13 @@ stock_fw/super_out/
 ```
 device/revoview/A67L/
 ├── Android.mk              # Device tree makefile
-├── BoardConfig.mk           # Board configuration
-├── device.mk                # Product makefile
+├── BoardConfig.mk           # Board configuration (TWRP + OFRP)
+├── device.mk                # Product makefile (TWRP + OFRP)
 ├── Image.gz-dtb             # Prebuilt kernel (48 MB)
 ├── proprietary-files.txt    # Vendor blob manifest (727 entries)
 ├── recovery.fstab           # Recovery mount table
 ├── setup-makefiles.sh       # Blob extraction helper
-├── vendorsetup.sh           # Lunch combo
+├── vendorsetup.sh           # Lunch combo (omni + fox)
 └── README.md                # This file
 
 vendor/revoview/A67L/
@@ -207,4 +249,5 @@ fastboot boot out/target/product/A67L/recovery.img
 2. FBE decryption may need keymaster lib tweaks
 3. Some touch drivers may not respond in recovery
 4. MTP may need additional kernel modules
-5. No kernel source available — using prebuilt kernel (standard for TWRP)
+5. No kernel source available — using prebuilt kernel (standard for recovery builds)
+6. OrangeFox A/B support (`OF_AB_DEVICE`) is set but untested
