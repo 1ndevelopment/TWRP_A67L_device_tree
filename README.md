@@ -1,6 +1,6 @@
 # TWRP Device Tree for FOXXD A67L (SC9863A)
 
-![A67L Logo](https://oemdrivers.com/sites/default/files/2025-09/phone-foxxd-a67l.webp)
+![A67L Logo](https://cdn.softtels.com/products/fZmQCFdns31g7o42hqusM7m6xjfMpDjnRDzOUSb7.png)
 
 | Device       | FOXXD A67L                                                        |
 |--------------|-------------------------------------------------------------------|
