@@ -1,5 +1,9 @@
 # TWRP Device Tree for FOXXD A67L (SC9863A)
 
+<p align="center">
+  <img src="http://oemdrivers.com/sites/default/files/2025-09/phone-foxxd-a67l.webp" alt="FOXXD A67L" width="300"/>
+</p>
+
 | Device       | FOXXD A67L                                                        |
 |--------------|-------------------------------------------------------------------|
 | Manufacturer | revoview                                                          |
