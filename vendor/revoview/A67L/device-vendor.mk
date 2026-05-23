@@ -793,7 +793,6 @@ PRODUCT_COPY_FILES += \
     device/revoview/A67L/vendor/revoview/A67L/proprietary/etc/ueventd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/ueventd.rc \
     device/revoview/A67L/vendor/revoview/A67L/proprietary/etc/uniber.conf:$(TARGET_COPY_OUT_VENDOR)/etc/uniber.conf \
     device/revoview/A67L/vendor/revoview/A67L/proprietary/etc/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml \
-
     device/revoview/A67L/vendor/revoview/A67L/proprietary/etc/wcn_chr.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wcn_chr.ini \
     device/revoview/A67L/vendor/revoview/A67L/proprietary/etc/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
     device/revoview/A67L/vendor/revoview/A67L/proprietary/etc/wifi/vendor_hals/unisoc_wifi_hal_arm64.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/vendor_hals/unisoc_wifi_hal_arm64.xml \
