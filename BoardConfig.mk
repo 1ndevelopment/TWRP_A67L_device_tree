@@ -45,6 +45,12 @@ BOARD_SUPPRESS_SECURE_ERASE := true
 BOARD_USES_PRODUCT_PARTITION := true
 BOARD_ROOT_EXTRA_FOLDERS := product vendor system system_ext
 
+# Dynamic partition filesystem types
+BOARD_SYSTEMIMAGE_FILE_SYSTEM_TYPE := erofs
+BOARD_SYSTEM_EXTIMAGE_FILE_SYSTEM_TYPE := erofs
+BOARD_PRODUCTIMAGE_FILE_SYSTEM_TYPE := erofs
+BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := erofs
+
 # Recovery
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/config/usb_gadget/g1/functions/mass_storage.usb0/lun.%d/file"
