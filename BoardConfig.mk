@@ -26,7 +26,7 @@ BOARD_RAMDISK_OFFSET := 0x05400000
 BOARD_KERNEL_TAGS_OFFSET := 0x00000100
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_ARCH := arm64
-TARGET_PREBUILT_KERNEL := device/revoview/A67L/Image.gz-dtb
+TARGET_PREBUILT_KERNEL := Image.gz-dtb
 # To build from source, uncomment and provide kernel source:
 # TARGET_KERNEL_SOURCE := kernel/revoview/A67L
 # TARGET_KERNEL_CONFIG := A67L_defconfig
@@ -48,7 +48,7 @@ BOARD_ROOT_EXTRA_FOLDERS := product vendor system system_ext
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/config/usb_gadget/g1/functions/mass_storage.usb0/lun.%d/file"
 BOARD_HAS_NO_SELECT_BUTTON := true
-TARGET_RECOVERY_FSTAB := device/revoview/A67L/recovery.fstab
+TARGET_RECOVERY_FSTAB := recovery.fstab
 
 # TWRP Specifics
 TW_THEME := portrait_hdpi

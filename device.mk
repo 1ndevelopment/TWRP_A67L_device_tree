@@ -1,7 +1,7 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Vendor proprietary files
-$(call inherit-product-if-exists, vendor/revoview/A67L/device-vendor.mk)
+$(call inherit-product-if-exists, device/revoview/A67L/vendor/revoview/A67L/device-vendor.mk)
 
 # OFRP (OrangeFox)
 $(call inherit-product-if-exists, vendor/recovery/OrangeFox/OrangeFox.mk)
