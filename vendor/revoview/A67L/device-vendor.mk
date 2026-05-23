@@ -10,11 +10,6 @@ PRODUCT_PACKAGES += \
     hwcomposer.unisoc
 
 PRODUCT_COPY_FILES += \
-    device/revoview/A67L/vendor/revoview/A67L/proprietary/app/EngineerMode/EngineerMode.apk:$(TARGET_COPY_OUT_VENDOR)/app/EngineerMode/EngineerMode.apk \
-    device/revoview/A67L/vendor/revoview/A67L/proprietary/app/LogManager/LogManager.apk:$(TARGET_COPY_OUT_VENDOR)/app/LogManager/LogManager.apk \
-    device/revoview/A67L/vendor/revoview/A67L/proprietary/app/ProxyNFwLocation/ProxyNFwLocation.apk:$(TARGET_COPY_OUT_VENDOR)/app/ProxyNFwLocation/ProxyNFwLocation.apk \
-    device/revoview/A67L/vendor/revoview/A67L/proprietary/app/SGPS/SGPS.apk:$(TARGET_COPY_OUT_VENDOR)/app/SGPS/SGPS.apk \
-    device/revoview/A67L/vendor/revoview/A67L/proprietary/app/UASetting/UASetting.apk:$(TARGET_COPY_OUT_VENDOR)/app/UASetting/UASetting.apk \
     device/revoview/A67L/vendor/revoview/A67L/proprietary/bin/[:$(TARGET_COPY_OUT_VENDOR)/bin/[ \
     device/revoview/A67L/vendor/revoview/A67L/proprietary/bin/acpi:$(TARGET_COPY_OUT_VENDOR)/bin/acpi \
     device/revoview/A67L/vendor/revoview/A67L/proprietary/bin/audiodumpclient:$(TARGET_COPY_OUT_VENDOR)/bin/audiodumpclient \
@@ -2513,30 +2508,6 @@ PRODUCT_COPY_FILES += \
     device/revoview/A67L/vendor/revoview/A67L/proprietary/lib64/vendor.unisoc.hardware.radio.voice-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.unisoc.hardware.radio.voice-V1-ndk.so \
     device/revoview/A67L/vendor/revoview/A67L/proprietary/odm:$(TARGET_COPY_OUT_VENDOR)/odm \
     device/revoview/A67L/vendor/revoview/A67L/proprietary/odm_dlkm/etc/build.prop:$(TARGET_COPY_OUT_VENDOR)/odm_dlkm/etc/build.prop \
-    device/revoview/A67L/vendor/revoview/A67L/proprietary/overlay/AospBtOverlay/AospBtOverlay.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/AospBtOverlay/AospBtOverlay.apk \
-    device/revoview/A67L/vendor/revoview/A67L/proprietary/overlay/AospBtOverlay_Sharkl3/AospBtOverlay_Sharkl3.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/AospBtOverlay_Sharkl3/AospBtOverlay_Sharkl3.apk \
-    device/revoview/A67L/vendor/revoview/A67L/proprietary/overlay/AospWifiOverlay.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/AospWifiOverlay.apk \
-    device/revoview/A67L/vendor/revoview/A67L/proprietary/overlay/AospWifiOverlay_Mainline.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/AospWifiOverlay_Mainline.apk \
-    device/revoview/A67L/vendor/revoview/A67L/proprietary/overlay/MultiuserOverlays.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/MultiuserOverlays.apk \
-    device/revoview/A67L/vendor/revoview/A67L/proprietary/overlay/NetworkStackOverlay.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/NetworkStackOverlay.apk \
-    device/revoview/A67L/vendor/revoview/A67L/proprietary/overlay/NetworkStackOverlayGsi.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/NetworkStackOverlayGsi.apk \
-    device/revoview/A67L/vendor/revoview/A67L/proprietary/overlay/SettingsProviderOverlay.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/SettingsProviderOverlay.apk \
-    device/revoview/A67L/vendor/revoview/A67L/proprietary/overlay/TetheringConfigOverlay.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/TetheringConfigOverlay.apk \
-    device/revoview/A67L/vendor/revoview/A67L/proprietary/overlay/TetheringConfigOverlayGsi.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/TetheringConfigOverlayGsi.apk \
-    device/revoview/A67L/vendor/revoview/A67L/proprietary/overlay/UniWifiOverlay_Sharkl3/UniWifiOverlay_Sharkl3.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/UniWifiOverlay_Sharkl3/UniWifiOverlay_Sharkl3.apk \
-    device/revoview/A67L/vendor/revoview/A67L/proprietary/overlay/threePointMenuOverlay.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/threePointMenuOverlay.apk \
-    device/revoview/A67L/vendor/revoview/A67L/proprietary/overlay/threePointOverlay.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/threePointOverlay.apk \
-    device/revoview/A67L/vendor/revoview/A67L/proprietary/overlay/unisoc_overlay_colordisplay.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/unisoc_overlay_colordisplay.apk \
-    device/revoview/A67L/vendor/revoview/A67L/proprietary/overlay/unisoc_overlay_core.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/unisoc_overlay_core.apk \
-    device/revoview/A67L/vendor/revoview/A67L/proprietary/overlay/unisoc_overlay_core_disable_swipe_up_gesture.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/unisoc_overlay_core_disable_swipe_up_gesture.apk \
-    device/revoview/A67L/vendor/revoview/A67L/proprietary/overlay/unisoc_overlay_core_wifi_display.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/unisoc_overlay_core_wifi_display.apk \
-    device/revoview/A67L/vendor/revoview/A67L/proprietary/overlay/unisoc_overlay_display_doze.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/unisoc_overlay_display_doze.apk \
-    device/revoview/A67L/vendor/revoview/A67L/proprietary/overlay/unisoc_overlay_phone.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/unisoc_overlay_phone.apk \
-    device/revoview/A67L/vendor/revoview/A67L/proprietary/overlay/unisoc_overlay_phone_core.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/unisoc_overlay_phone_core.apk \
-    device/revoview/A67L/vendor/revoview/A67L/proprietary/overlay/unisoc_overlay_power_sharkl3.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/unisoc_overlay_power_sharkl3.apk \
-    device/revoview/A67L/vendor/revoview/A67L/proprietary/overlay/unisoc_res_overlay_colordisplay.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/unisoc_res_overlay_colordisplay.apk \
-    device/revoview/A67L/vendor/revoview/A67L/proprietary/overlay/unisoc_res_overlay_power_sharkl3.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/unisoc_res_overlay_power_sharkl3.apk \
-    device/revoview/A67L/vendor/revoview/A67L/proprietary/overlay/validationConfigOverlay.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/validationConfigOverlay.apk \
     device/revoview/A67L/vendor/revoview/A67L/proprietary/usr/idc/adaptive_ts.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/adaptive_ts.idc \
     device/revoview/A67L/vendor/revoview/A67L/proprietary/usr/idc/focaltech_ats.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/focaltech_ats.idc \
     device/revoview/A67L/vendor/revoview/A67L/proprietary/usr/idc/focaltech_spi_ts.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/focaltech_spi_ts.idc \
