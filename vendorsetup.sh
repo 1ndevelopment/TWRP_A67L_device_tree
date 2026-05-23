@@ -1,4 +1,1 @@
-add_lunch_combo omni_A67L-userdebug
-add_lunch_combo fox_A67L-userdebug
-add_lunch_combo ofrp_A67L-eng
-add_lunch_combo ofrp_A67L-userdebug
+
