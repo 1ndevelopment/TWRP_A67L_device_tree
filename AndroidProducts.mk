@@ -3,6 +3,4 @@ PRODUCT_MAKEFILES := \
 
 COMMON_LUNCH_CHOICES := \
     ofrp_A67L-eng \
-    ofrp_A67L-userdebug \
-    omni_A67L-userdebug \
-    fox_A67L-userdebug
+    ofrp_A67L-userdebug
