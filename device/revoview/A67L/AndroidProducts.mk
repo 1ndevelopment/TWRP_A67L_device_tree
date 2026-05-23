@@ -1,2 +1,2 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/fox_A67L.mk
+    $(LOCAL_DIR)/ofrp_A67L.mk
