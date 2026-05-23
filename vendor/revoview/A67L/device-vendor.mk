@@ -793,45 +793,7 @@ PRODUCT_COPY_FILES += \
     device/revoview/A67L/vendor/revoview/A67L/proprietary/etc/ueventd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/ueventd.rc \
     device/revoview/A67L/vendor/revoview/A67L/proprietary/etc/uniber.conf:$(TARGET_COPY_OUT_VENDOR)/etc/uniber.conf \
     device/revoview/A67L/vendor/revoview/A67L/proprietary/etc/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml \
-    device/revoview/A67L/vendor/revoview/A67L/proprietary/etc/vintf/compatibility_matrix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/compatibility_matrix.xml \
-    device/revoview/A67L/vendor/revoview/A67L/proprietary/etc/vintf/manifest.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest.xml \
-    device/revoview/A67L/vendor/revoview/A67L/proprietary/etc/vintf/manifest/ai_engine-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/ai_engine-default.xml \
-    device/revoview/A67L/vendor/revoview/A67L/proprietary/etc/vintf/manifest/android.hardware.cas@1.2-service.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.cas@1.2-service.xml \
-    device/revoview/A67L/vendor/revoview/A67L/proprietary/etc/vintf/manifest/android.hardware.drm-service.clearkey.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.drm-service.clearkey.xml \
-    device/revoview/A67L/vendor/revoview/A67L/proprietary/etc/vintf/manifest/android.hardware.gatekeeper@1.0-service.trusty.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.gatekeeper@1.0-service.trusty.xml \
-    device/revoview/A67L/vendor/revoview/A67L/proprietary/etc/vintf/manifest/android.hardware.health-service.example.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.health-service.example.xml \
-    device/revoview/A67L/vendor/revoview/A67L/proprietary/etc/vintf/manifest/android.hardware.security.keymint@2.0-unisoc.service.trusty.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.security.keymint@2.0-unisoc.service.trusty.xml \
-    device/revoview/A67L/vendor/revoview/A67L/proprietary/etc/vintf/manifest/android.hardware.sensors-multihal.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.sensors-multihal.xml \
-    device/revoview/A67L/vendor/revoview/A67L/proprietary/etc/vintf/manifest/android.hardware.thermal@2.0-service.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.thermal@2.0-service.xml \
-    device/revoview/A67L/vendor/revoview/A67L/proprietary/etc/vintf/manifest/android.hardware.usb-service.unisoc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.usb-service.unisoc.xml \
-    device/revoview/A67L/vendor/revoview/A67L/proprietary/etc/vintf/manifest/android.hardware.wifi.hostapd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.wifi.hostapd.xml \
-    device/revoview/A67L/vendor/revoview/A67L/proprietary/etc/vintf/manifest/android.hardware.wifi.supplicant.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.wifi.supplicant.xml \
-    device/revoview/A67L/vendor/revoview/A67L/proprietary/etc/vintf/manifest/android.hardware.wifi@1.0-service.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.wifi@1.0-service.xml \
-    device/revoview/A67L/vendor/revoview/A67L/proprietary/etc/vintf/manifest/bluetooth_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/bluetooth_audio.xml \
-    device/revoview/A67L/vendor/revoview/A67L/proprietary/etc/vintf/manifest/cplog_svc-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/cplog_svc-default.xml \
-    device/revoview/A67L/vendor/revoview/A67L/proprietary/etc/vintf/manifest/enhance-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/enhance-default.xml \
-    device/revoview/A67L/vendor/revoview/A67L/proprietary/etc/vintf/manifest/face-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/face-default.xml \
-    device/revoview/A67L/vendor/revoview/A67L/proprietary/etc/vintf/manifest/identity-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/identity-default.xml \
-    device/revoview/A67L/vendor/revoview/A67L/proprietary/etc/vintf/manifest/ifaa-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/ifaa-default.xml \
-    device/revoview/A67L/vendor/revoview/A67L/proprietary/etc/vintf/manifest/lights.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/lights.xml \
-    device/revoview/A67L/vendor/revoview/A67L/proprietary/etc/vintf/manifest/manifest_android.hardware.drm-service.widevine.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/manifest_android.hardware.drm-service.widevine.xml \
-    device/revoview/A67L/vendor/revoview/A67L/proprietary/etc/vintf/manifest/manifest_dualsim.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/manifest_dualsim.xml \
-    device/revoview/A67L/vendor/revoview/A67L/proprietary/etc/vintf/manifest/manifest_media_c2_V1_1_unisoc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/manifest_media_c2_V1_1_unisoc.xml \
-    device/revoview/A67L/vendor/revoview/A67L/proprietary/etc/vintf/manifest/memtrack.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/memtrack.xml \
-    device/revoview/A67L/vendor/revoview/A67L/proprietary/etc/vintf/manifest/network-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/network-default.xml \
-    device/revoview/A67L/vendor/revoview/A67L/proprietary/etc/vintf/manifest/power.stats-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/power.stats-default.xml \
-    device/revoview/A67L/vendor/revoview/A67L/proprietary/etc/vintf/manifest/rebootescrow-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/rebootescrow-default.xml \
-    device/revoview/A67L/vendor/revoview/A67L/proprietary/etc/vintf/manifest/soter_default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/soter_default.xml \
-    device/revoview/A67L/vendor/revoview/A67L/proprietary/etc/vintf/manifest/trusty-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/trusty-default.xml \
-    device/revoview/A67L/vendor/revoview/A67L/proprietary/etc/vintf/manifest/tui-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/tui-default.xml \
-    device/revoview/A67L/vendor/revoview/A67L/proprietary/etc/vintf/manifest/unionpnp_service-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/unionpnp_service-default.xml \
-    device/revoview/A67L/vendor/revoview/A67L/proprietary/etc/vintf/manifest/vendor-oemlock-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vendor-oemlock-default.xml \
-    device/revoview/A67L/vendor/revoview/A67L/proprietary/etc/vintf/manifest/vendor-power-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vendor-power-default.xml \
-    device/revoview/A67L/vendor/revoview/A67L/proprietary/etc/vintf/manifest/vendor-tool-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vendor-tool-default.xml \
-    device/revoview/A67L/vendor/revoview/A67L/proprietary/etc/vintf/manifest/vendor.sprd.gnss-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vendor.sprd.gnss-default.xml \
-    device/revoview/A67L/vendor/revoview/A67L/proprietary/etc/vintf/manifest/vendor.sprd.hardware.boot@1.2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vendor.sprd.hardware.boot@1.2.xml \
-    device/revoview/A67L/vendor/revoview/A67L/proprietary/etc/vintf/manifest/vendor.sprd.hardware.thermal@2.0-service.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vendor.sprd.hardware.thermal@2.0-service.xml \
-    device/revoview/A67L/vendor/revoview/A67L/proprietary/etc/vintf/manifest/vibrator.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vibrator.xml \
+
     device/revoview/A67L/vendor/revoview/A67L/proprietary/etc/wcn_chr.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wcn_chr.ini \
     device/revoview/A67L/vendor/revoview/A67L/proprietary/etc/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
     device/revoview/A67L/vendor/revoview/A67L/proprietary/etc/wifi/vendor_hals/unisoc_wifi_hal_arm64.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/vendor_hals/unisoc_wifi_hal_arm64.xml \
