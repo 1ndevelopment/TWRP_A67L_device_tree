@@ -85,7 +85,6 @@ OF_USE_MAGISKBOOT := 1
 OF_USE_MAGISKBOOT_FOR_ALL_PATCHES := 1
 OF_DONT_PATCH_ENCRYPTED_DEVICE := 1
 OF_QUICK_BACKUP_LIST := /data;/system;/vendor;/product;/system_ext;/boot;
-FOX_VERSION := R11.1
 FOX_VARIANT := A67L
 
 # Verified Boot
