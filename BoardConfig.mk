@@ -55,7 +55,7 @@ BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := erofs
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/config/usb_gadget/g1/functions/mass_storage.usb0/lun.%d/file"
 BOARD_HAS_NO_SELECT_BUTTON := true
-TARGET_RECOVERY_FSTAB := recovery.fstab
+TARGET_RECOVERY_FSTAB := device/revoview/A67L/recovery.fstab
 
 # TWRP Specifics
 TW_THEME := portrait_hdpi
