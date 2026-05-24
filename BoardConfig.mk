@@ -52,6 +52,7 @@ BOARD_PRODUCTIMAGE_FILE_SYSTEM_TYPE := erofs
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := erofs
 
 # Recovery
+LZMA_RAMDISK := true
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/config/usb_gadget/g1/functions/mass_storage.usb0/lun.%d/file"
 BOARD_HAS_NO_SELECT_BUTTON := true
