@@ -27,7 +27,7 @@ BOARD_RAMDISK_OFFSET := 0x05400000
 BOARD_KERNEL_TAGS_OFFSET := 0x00000100
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_ARCH := arm64
-TARGET_PREBUILT_KERNEL := Image.gz-dtb
+TARGET_PREBUILT_KERNEL := device/revoview/A67L/Image.gz-dtb
 # To build from source, uncomment and provide kernel source:
 # TARGET_KERNEL_SOURCE := kernel/revoview/A67L
 # TARGET_KERNEL_CONFIG := A67L_defconfig
