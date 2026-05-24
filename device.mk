@@ -48,3 +48,10 @@ TARGET_COPY_OUT_VENDOR := vendor
 
 # A/B updater (required for both TWRP and OFRP)
 AB_OTA_UPDATER := true
+AB_OTA_PARTITIONS := \
+    boot \
+    vendor_boot \
+    dtbo \
+    vbmeta \
+    vbmeta_vendor \
+    vbmeta_system
