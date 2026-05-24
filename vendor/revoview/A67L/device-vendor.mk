@@ -10,7 +10,6 @@ PRODUCT_PACKAGES += \
     hwcomposer.unisoc
 
 PRODUCT_COPY_FILES += \
-    device/revoview/A67L/vendor/revoview/A67L/proprietary/bin/[:$(TARGET_COPY_OUT_VENDOR)/bin/[ \
     device/revoview/A67L/vendor/revoview/A67L/proprietary/bin/acpi:$(TARGET_COPY_OUT_VENDOR)/bin/acpi \
     device/revoview/A67L/vendor/revoview/A67L/proprietary/bin/audiodumpclient:$(TARGET_COPY_OUT_VENDOR)/bin/audiodumpclient \
     device/revoview/A67L/vendor/revoview/A67L/proprietary/bin/awk:$(TARGET_COPY_OUT_VENDOR)/bin/awk \
