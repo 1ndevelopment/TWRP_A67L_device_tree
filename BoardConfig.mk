@@ -90,5 +90,8 @@ OF_DONT_PATCH_ENCRYPTED_DEVICE := 1
 OF_QUICK_BACKUP_LIST := /data;/system;/vendor;/product;/system_ext;/boot;
 FOX_VARIANT := A67L
 
+# Vendor boot-as-recovery for boot header v4 devices
+FOX_VENDOR_BOOT_RECOVERY := 1
+
 # Verified Boot — disabled to avoid test key rejection
 BOARD_AVB_ENABLE := false
