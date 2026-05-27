@@ -94,18 +94,26 @@ TW_INCLUDE_BASH := true
 TW_INCLUDE_NTFS_3G := true
 TW_FLASH_AFTER_OTA_DATA_CLEAR := true
 
-# OFRP (OrangeFox) Specifics
+# Vendor boot-as-recovery (header v4) — FOX_VENDOR_BOOT_RECOVERY must be
+# exported in vendorsetup.sh (not set here) for OrangeFox scripts to see it.
+# This block configures AOSP build variables accordingly.
+ifeq ($(FOX_VENDOR_BOOT_RECOVERY),1)
+  BOARD_USES_RECOVERY_AS_BOOT :=
+  BOARD_EXCLUDE_KERNEL_FROM_RECOVERY_IMAGE :=
+  BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
+  BOARD_INCLUDE_RECOVERY_RAMDISK_IN_VENDOR_BOOT := true
+
+  # Ensure mkbootimg receives the v4 header version for vendor_boot
+  BOARD_MKBOOTIMG_ARGS += --header_version 4
+endif
+
+# OFRP (OrangeFox) Specifics — OF_* vars are OK in .mk files
 OF_THEME := portrait_hdpi
-FOX_AB_DEVICE := 1
 OF_NO_TREBLE_COMPATIBILITY_CHECK := 1
 OF_USE_MAGISKBOOT := 1
 OF_USE_MAGISKBOOT_FOR_ALL_PATCHES := 1
 OF_DONT_PATCH_ENCRYPTED_DEVICE := 1
 OF_QUICK_BACKUP_LIST := /data;/system;/vendor;/product;/system_ext;/boot;
-FOX_VARIANT := A67L
-
-# Vendor boot-as-recovery for boot header v4 devices
-FOX_VENDOR_BOOT_RECOVERY := 1
 
 # Verified Boot — disabled to avoid test key rejection
 BOARD_AVB_ENABLE := false
