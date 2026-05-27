@@ -1,1 +1,6 @@
 .repo
+vendor/
+*.swp
+*.swo
+*~
+

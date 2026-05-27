@@ -38,13 +38,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 BOARD_SUPER_PARTITION_GROUPS := foxxd_dynamic_partitions
 BOARD_FOXXD_DYNAMIC_PARTITIONS_SIZE := 5872025600
-BOARD_FOXXD_DYNAMIC_PARTITIONS_PARTITION_LIST := system system_ext product vendor
+BOARD_FOXXD_DYNAMIC_PARTITIONS_PARTITION_LIST := system system_ext product vendor odm
 
 # Partition copy targets
 TARGET_COPY_OUT_SYSTEM := system
 TARGET_COPY_OUT_SYSTEM_EXT := system_ext
 TARGET_COPY_OUT_PRODUCT := product
 TARGET_COPY_OUT_VENDOR := vendor
+TARGET_COPY_OUT_ODM := odm
 
 # A/B updater (required for both TWRP and OFRP)
 AB_OTA_UPDATER := true

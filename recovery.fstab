@@ -4,6 +4,10 @@
 # Boot partitions (physical, slot-specific)
 /boot           emmc    /dev/block/by-name/boot           slotselect
 /vendor_boot    emmc    /dev/block/by-name/vendor_boot    slotselect
+/dtbo           emmc    /dev/block/by-name/dtbo           slotselect
+/vbmeta         emmc    /dev/block/by-name/vbmeta         slotselect
+/vbmeta_vendor  emmc    /dev/block/by-name/vbmeta_vendor  slotselect
+/vbmeta_system  emmc    /dev/block/by-name/vbmeta_system  slotselect
 
 # Dynamic/logical partitions (mapped from super by TWRP)
 /system         erofs   /dev/block/mapper/system          defaults
@@ -21,3 +25,4 @@
 /misc           emmc    /dev/block/by-name/misc           defaults
 /persist        emmc    /dev/block/by-name/persist        defaults
 /prodnv         ext4    /dev/block/by-name/prodnv         defaults
+/super          emmc    /dev/block/by-name/super          slotselect
