@@ -107,7 +107,6 @@ ifeq ($(FOX_VENDOR_BOOT_RECOVERY),1)
   # Ensure mkbootimg receives the v4 header version for vendor_boot
   BOARD_MKBOOTIMG_ARGS += --header_version 4
 endif
-BOARD_PREBUILT_DTBIMAGE_DIR := device/revoview/A67L
 
 # OFRP (OrangeFox) Specifics — OF_* vars are OK in .mk files
 OF_THEME := portrait_hdpi

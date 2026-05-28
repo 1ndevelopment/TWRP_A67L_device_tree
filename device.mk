@@ -56,7 +56,3 @@ AB_OTA_PARTITIONS := \
     vbmeta \
     vbmeta_vendor \
     vbmeta_system
-
-# Vendor DTB for vendor_boot v4 (extracted from stock vendor_boot_a.bin)
-PRODUCT_COPY_FILES += \
-    device/revoview/A67L/vendor_dtb:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/dtb.img
