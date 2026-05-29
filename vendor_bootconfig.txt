@@ -1,0 +1,2 @@
+androidboot.hardware=s9863a1h10
+androidboot.boot_devices=soc/soc:ap-ahb/20600000.sdio
