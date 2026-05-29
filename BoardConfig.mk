@@ -114,7 +114,7 @@ ifeq ($(FOX_VENDOR_BOOT_RECOVERY),1)
   BOARD_MKBOOTIMG_ARGS += --ramdisk_offset 0x05400000
 
   # Provide bootconfig data (cmdline has "bootconfig bootconfig" — kernel expects it)
-  BOARD_VENDOR_BOOTCONFIG_FILE := device/revoview/A67L/vendor_bootconfig.txt
+  BOARD_MKBOOTIMG_ARGS += --vendor_bootconfig device/revoview/A67L/vendor_bootconfig.txt
 endif
 
 # OFRP (OrangeFox) Specifics — OF_* vars are OK in .mk files
