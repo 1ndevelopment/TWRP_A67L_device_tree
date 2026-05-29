@@ -106,8 +106,9 @@ ifeq ($(FOX_VENDOR_BOOT_RECOVERY),1)
   BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
   BOARD_INCLUDE_RECOVERY_RAMDISK_IN_VENDOR_BOOT := true
 
-  # Ensure mkbootimg receives the v4 header version for vendor_boot
+  # Ensure mkbootimg receives the v4 header version and DTB for vendor_boot
   BOARD_MKBOOTIMG_ARGS += --header_version 4
+  BOARD_MKBOOTIMG_ARGS += --dtb device/revoview/A67L/dtb.img --dtb_offset 0x00000000
 endif
 
 # OFRP (OrangeFox) Specifics — OF_* vars are OK in .mk files
