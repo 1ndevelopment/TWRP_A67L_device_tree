@@ -39,10 +39,9 @@ BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
 BOARD_VENDOR_BOOTIMAGE_PARTITION_SIZE := 104857600
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 24147728384
 BOARD_SUPER_PARTITION_SIZE := 5872025600
-BOARD_BOOT_HEADER_VERSION := 4
-BOARD_HAS_VENDOR_BOOT := true
-BOARD_INCLUDE_DTB_IN_BOOTIMG := true
-BOARD_PREBUILT_DTBIMAGE_DIR := device/revoview/A67L
+
+# OrangeFox handles vendor_boot-as-recovery via FOX_VENDOR_BOOT_RECOVERY=1
+# using magiskboot, so DO NOT set AOSP v4 vendor_boot build variables here.
 
 # DTBO partition
 BOARD_DTBOIMG_PARTITION_SIZE := 16777216
@@ -97,22 +96,8 @@ TW_INCLUDE_BASH := true
 TW_INCLUDE_NTFS_3G := true
 TW_FLASH_AFTER_OTA_DATA_CLEAR := true
 
-# Vendor boot-as-recovery (header v4) — FOX_VENDOR_BOOT_RECOVERY must be
-# exported in vendorsetup.sh (not set here) for OrangeFox scripts to see it.
-# OrangeFox handles the recovery ramdisk insertion into vendor_boot via its own
-# scripts, so DO NOT set BOARD_INCLUDE_RECOVERY_RAMDISK_IN_VENDOR_BOOT (that
-# triggers --vendor_ramdisk_fragment which older mkbootimg doesn't support).
-ifeq ($(FOX_VENDOR_BOOT_RECOVERY),1)
-  BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
-
-  # mkbootimg v4 args (header_version, base, and ramdisk_offset are auto-derived
-  # from BOARD_BOOT_HEADER_VERSION, BOARD_KERNEL_BASE, BOARD_RAMDISK_OFFSET;
-  # --dtb is auto-derived from BOARD_PREBUILT_DTBIMAGE_DIR)
-  BOARD_MKBOOTIMG_ARGS += --dtb_offset 0x01f00000
-
-  # Provide bootconfig data (cmdline has "bootconfig bootconfig" — kernel expects it)
-  BOARD_MKBOOTIMG_ARGS += --vendor_bootconfig device/revoview/A67L/vendor_bootconfig.txt
-endif
+# OrangeFox handles vendor_boot-as-recovery via FOX_VENDOR_BOOT_RECOVERY=1
+# using magiskboot (not AOSP mkbootimg), so no BOARD_MKBOOTIMG_ARGS needed here.
 
 # OFRP (OrangeFox) Specifics — OF_* vars are OK in .mk files
 OF_THEME := portrait_hdpi
