@@ -42,11 +42,11 @@ BOARD_SUPER_PARTITION_SIZE := 5872025600
 
 # Boot header v4 with vendor_boot. OrangeFox handles vendor_boot-as-recovery
 # via FOX_VENDOR_BOOT_RECOVERY=1 using magiskboot (not AOSP mkbootimg).
-# Do NOT set BOARD_INCLUDE_RECOVERY_RAMDISK_IN_VENDOR_BOOT or
-# BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT — those trigger
+# Do NOT set BOARD_INCLUDE_RECOVERY_RAMDISK_IN_VENDOR_BOOT — that triggers
 # --vendor_ramdisk_fragment which OrangeFox's older mkbootimg doesn't support.
 BOARD_BOOT_HEADER_VERSION := 4
 BOARD_HAS_VENDOR_BOOT := true
+BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_PREBUILT_DTBIMAGE_DIR := device/revoview/A67L
 
@@ -103,8 +103,9 @@ TW_INCLUDE_BASH := true
 TW_INCLUDE_NTFS_3G := true
 TW_FLASH_AFTER_OTA_DATA_CLEAR := true
 
-# OrangeFox handles vendor_boot-as-recovery via FOX_VENDOR_BOOT_RECOVERY=1
-# using magiskboot (not AOSP mkbootimg), so no BOARD_MKBOOTIMG_ARGS needed here.
+# OrangeFox's mkbootimg needs explicit --header_version 4 for vendor_boot,
+# otherwise it defaults to v2 which rejects --vendor_boot.
+BOARD_MKBOOTIMG_ARGS += --header_version 4
 
 # OFRP (OrangeFox) Specifics — OF_* vars are OK in .mk files
 OF_THEME := portrait_hdpi
