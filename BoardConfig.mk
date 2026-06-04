@@ -99,14 +99,15 @@ TW_FLASH_AFTER_OTA_DATA_CLEAR := true
 
 # Vendor boot-as-recovery (header v4) — FOX_VENDOR_BOOT_RECOVERY must be
 # exported in vendorsetup.sh (not set here) for OrangeFox scripts to see it.
-# This block configures AOSP build variables accordingly.
+# OrangeFox handles the recovery ramdisk insertion into vendor_boot via its own
+# scripts, so DO NOT set BOARD_INCLUDE_RECOVERY_RAMDISK_IN_VENDOR_BOOT (that
+# triggers --vendor_ramdisk_fragment which older mkbootimg doesn't support).
 ifeq ($(FOX_VENDOR_BOOT_RECOVERY),1)
   BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
-  BOARD_INCLUDE_RECOVERY_RAMDISK_IN_VENDOR_BOOT := true
 
   # mkbootimg v4 args (header_version, base, and ramdisk_offset are auto-derived
-  # from BOARD_BOOT_HEADER_VERSION, BOARD_KERNEL_BASE, BOARD_RAMDISK_OFFSET)
-  BOARD_MKBOOTIMG_ARGS += --dtb device/revoview/A67L/dtb.img
+  # from BOARD_BOOT_HEADER_VERSION, BOARD_KERNEL_BASE, BOARD_RAMDISK_OFFSET;
+  # --dtb is auto-derived from BOARD_PREBUILT_DTBIMAGE_DIR)
   BOARD_MKBOOTIMG_ARGS += --dtb_offset 0x01f00000
 
   # Provide bootconfig data (cmdline has "bootconfig bootconfig" — kernel expects it)
