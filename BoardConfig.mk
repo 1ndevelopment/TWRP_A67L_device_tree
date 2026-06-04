@@ -40,8 +40,14 @@ BOARD_VENDOR_BOOTIMAGE_PARTITION_SIZE := 104857600
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 24147728384
 BOARD_SUPER_PARTITION_SIZE := 5872025600
 
-# OrangeFox handles vendor_boot-as-recovery via FOX_VENDOR_BOOT_RECOVERY=1
-# using magiskboot, so DO NOT set AOSP v4 vendor_boot build variables here.
+# Boot header v4 with vendor_boot. OrangeFox handles vendor_boot-as-recovery
+# via FOX_VENDOR_BOOT_RECOVERY=1 using magiskboot (not AOSP mkbootimg).
+# Do NOT set BOARD_INCLUDE_RECOVERY_RAMDISK_IN_VENDOR_BOOT or
+# BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT — those trigger
+# --vendor_ramdisk_fragment which OrangeFox's older mkbootimg doesn't support.
+BOARD_BOOT_HEADER_VERSION := 4
+BOARD_HAS_VENDOR_BOOT := true
+BOARD_PREBUILT_DTBIMAGE_DIR := device/revoview/A67L
 
 # DTBO partition
 BOARD_DTBOIMG_PARTITION_SIZE := 16777216
