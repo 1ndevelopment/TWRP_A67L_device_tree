@@ -232,16 +232,20 @@ vendor/revoview/A67L/
 
 WARNING: Flashing a custom recovery requires an unlocked bootloader. FOXXD may require SP Flash Tool or similar Unisoc flashing methods.
 
+This device uses **vendor_boot-as-recovery** (Android 14 boot header v4). There is no dedicated recovery partition — the recovery ramdisk lives inside `vendor_boot`. The build output is a vendor_boot image containing the recovery ramdisk.
+
 ```bash
-# After building
-fastboot flash recovery out/target/product/A67L/recovery.img
+# Flash recovery to vendor_boot (requires unlocked bootloader)
+fastboot flash vendor_boot out/target/product/A67L/vendor_boot.img
 fastboot reboot
 ```
 
-For initial boot, use:
+For initial boot without flashing, use:
 ```bash
-fastboot boot out/target/product/A67L/recovery.img
+fastboot boot out/target/product/A67L/vendor_boot.img
 ```
+
+**Note:** If using SP Flash Tool (Unisoc), flash the `vendor_boot` partition with the generated `vendor_boot.img`.
 
 ## Known Issues
 

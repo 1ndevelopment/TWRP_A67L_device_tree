@@ -26,6 +26,10 @@ BUILD_FINGERPRINT := "FOXXD/A67L_3G/A67L:14/U01005/1760949761:user/release-keys"
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720
 
+# OrangeFox screen dimensions (must be explicit for fox builds)
+OF_SCREEN_H := 1280
+OF_SCREEN_W := 720
+
 # Properties
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.secure=0 \
@@ -52,7 +56,15 @@ AB_OTA_UPDATER := true
 AB_OTA_PARTITIONS := \
     boot \
     vendor_boot \
+    init_boot \
     dtbo \
+    dtb \
     vbmeta \
     vbmeta_vendor \
-    vbmeta_system
+    vbmeta_system \
+    vbmeta_odm \
+    vbmeta_product \
+    vbmeta_system_ext \
+    avbmeta_rs \
+    common_rs1 \
+    common_rs2
