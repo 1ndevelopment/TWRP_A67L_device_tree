@@ -47,6 +47,7 @@ BOARD_SUPER_PARTITION_SIZE := 5872025600
 # --vendor_ramdisk_fragment which OrangeFox's older mkbootimg doesn't support.
 BOARD_BOOT_HEADER_VERSION := 4
 BOARD_HAS_VENDOR_BOOT := true
+BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_PREBUILT_DTBIMAGE_DIR := device/revoview/A67L
 
 # DTBO partition
