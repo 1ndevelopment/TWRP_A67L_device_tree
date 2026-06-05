@@ -40,19 +40,18 @@ BOARD_VENDOR_BOOTIMAGE_PARTITION_SIZE := 104857600
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 24147728384
 BOARD_SUPER_PARTITION_SIZE := 5872025600
 
-# Boot header v4 with vendor_boot. OrangeFox handles vendor_boot-as-recovery
-# via FOX_VENDOR_BOOT_RECOVERY=1 using magiskboot (not AOSP mkbootimg).
-# All three flags below are required for AOSP mkbootimg.py to generate a
-# vendor_boot with the recovery ramdisk as a VENDOR_RAMDISK_TYPE_RECOVERY
-# fragment.  Without BOARD_INCLUDE_RECOVERY_RAMDISK_IN_VENDOR_BOOT the
-# build system omits the recovery ramdisk, resulting in a ~200 KB image
-# that the bootloader will reject on the device.
+# Boot header v4 with vendor_boot — DTB lives in vendor_boot, not boot.img.
+# Image.gz-dtb already has DTB appended, so BOARD_INCLUDE_DTB_IN_BOOTIMG is
+# false to avoid double-DTB in boot.img.  BOARD_PREBUILT_DTBIMAGE_DIR +
+# BOARD_DTB_OFFSET tell mkbootimg.py to embed dtb.img into vendor_boot's DTB
+# section and set the dtb_addr header field correctly.
 BOARD_BOOT_HEADER_VERSION := 4
 BOARD_HAS_VENDOR_BOOT := true
 BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
 BOARD_INCLUDE_RECOVERY_RAMDISK_IN_VENDOR_BOOT := true
-BOARD_INCLUDE_DTB_IN_BOOTIMG := true
+BOARD_INCLUDE_DTB_IN_BOOTIMG := false
 BOARD_PREBUILT_DTBIMAGE_DIR := device/revoview/A67L
+BOARD_DTB_OFFSET := 0x00000000
 
 # DTBO partition
 BOARD_DTBOIMG_PARTITION_SIZE := 16777216
