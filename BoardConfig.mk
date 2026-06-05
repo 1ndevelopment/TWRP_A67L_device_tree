@@ -42,11 +42,15 @@ BOARD_SUPER_PARTITION_SIZE := 5872025600
 
 # Boot header v4 with vendor_boot. OrangeFox handles vendor_boot-as-recovery
 # via FOX_VENDOR_BOOT_RECOVERY=1 using magiskboot (not AOSP mkbootimg).
-# Do NOT set BOARD_INCLUDE_RECOVERY_RAMDISK_IN_VENDOR_BOOT — that triggers
-# --vendor_ramdisk_fragment which OrangeFox's older mkbootimg doesn't support.
+# All three flags below are required for AOSP mkbootimg.py to generate a
+# vendor_boot with the recovery ramdisk as a VENDOR_RAMDISK_TYPE_RECOVERY
+# fragment.  Without BOARD_INCLUDE_RECOVERY_RAMDISK_IN_VENDOR_BOOT the
+# build system omits the recovery ramdisk, resulting in a ~200 KB image
+# that the bootloader will reject on the device.
 BOARD_BOOT_HEADER_VERSION := 4
 BOARD_HAS_VENDOR_BOOT := true
 BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
+BOARD_INCLUDE_RECOVERY_RAMDISK_IN_VENDOR_BOOT := true
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_PREBUILT_DTBIMAGE_DIR := device/revoview/A67L
 
@@ -103,7 +107,7 @@ TW_INCLUDE_BASH := true
 TW_INCLUDE_NTFS_3G := true
 TW_FLASH_AFTER_OTA_DATA_CLEAR := true
 
-# OrangeFox's mkbootimg needs explicit --header_version 4 for vendor_boot,
+# AOSP mkbootimg.py needs explicit --header_version 4 for vendor_boot,
 # otherwise it defaults to v2 which rejects --vendor_boot.
 BOARD_MKBOOTIMG_ARGS += --header_version 4
 
