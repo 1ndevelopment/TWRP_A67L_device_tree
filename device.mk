@@ -32,10 +32,8 @@ OF_SCREEN_W := 720
 
 # Properties
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.secure=0 \
     ro.adb.secure=0 \
     ro.allow.mock.location=1 \
-    ro.debuggable=1 \
     persist.sys.usb.config=mtp,adb
 
 # Dynamic partitions
