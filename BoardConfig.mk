@@ -29,6 +29,8 @@ BOARD_KERNEL_CMDLINE := console=ttyS1,115200n8 bootconfig bootconfig
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_ARCH := arm64
 TARGET_PREBUILT_KERNEL := device/revoview/A67L/Image.gz-dtb
+TARGET_PREBUILT_DTB := device/revoview/A67L/dtb.img
+
 # To build from source, uncomment and provide kernel source:
 # TARGET_KERNEL_SOURCE := kernel/revoview/A67L
 # TARGET_KERNEL_CONFIG := A67L_defconfig
